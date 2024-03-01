@@ -1,0 +1,41 @@
+/* RESETS */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* VARIABLES */
+:root {
+  --white: #ebebeb;
+  --black: #222529;
+  --gray: #cfcfcf;
+  --gray2: #f2f2f2;
+
+  --shade1: #a9ddf4;
+  --shade2: #81b4ca;
+  --shade3: #598ca2;
+  --shade4: #32677b;
+  --green:#399283;
+  --dark-blue: #004457;
+
+  --card-shadow: #00000099;
+}
