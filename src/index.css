@@ -42,3 +42,7 @@ li {
 a {
   text-decoration: none;
 }
+
+.scroll {
+  scroll-margin-top: 100px;
+}
