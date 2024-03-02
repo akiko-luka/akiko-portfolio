@@ -3,10 +3,9 @@
   color: var(--blue);
 
   /* VARIABLES */
-  --white: #ebebeb;
+  --white: #ffffff;
   --black: #222529;
-  --gray: #cfcfcf;
-  --gray2: #f2f2f2;
+  --gray: #f2f2f2;
   --blue: #112a46;
 
   --shade1: #a9ddf4;
