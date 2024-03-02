@@ -1,0 +1,58 @@
+.hero {
+  height: calc(100vh - 100px);
+  display: grid;
+  text-align: center;
+  place-content: center;
+  background: url("../../assets/hero-bg-water-colour.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .hero__title {
+    padding: 5px;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    animation: typing 8000ms steps(14) forwards;
+
+    &::before {
+      content: "|";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 3px;
+      font-size: 3rem;
+      background: var(--blue);
+      animation: blinkCursor 1500ms steps(1) infinite;
+    }
+  }
+}
+
+
+  @keyframes blinkCursor {
+    0%,
+    75% {
+      opacity: 1;
+    }
+    76%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    25%,
+    50%,
+    75%,
+    100% {
+      /* width: 375.47px; */
+      width: 360px;
+    }
+  }
