@@ -1,0 +1,44 @@
+.navbar__container {
+  background: var(--blue-green);
+  position: sticky;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  .logo a {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem;
+  }
+
+  .navbar__menu {
+    display: flex;
+
+    a {
+      border: 1px solid transparent;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--white);
+      padding: 10px;
+      transition: transform 300ms;  
+    }
+
+    a:hover {
+      outline: 2px solid #ffffff1a;
+      transform: translateY(-10px);
+      box-shadow: var(--box-shadow);
+      padding: 10px;
+    }
+  }
+}
