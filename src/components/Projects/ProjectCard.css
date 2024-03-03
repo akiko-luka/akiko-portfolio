@@ -1,0 +1,27 @@
+.card__container {
+  border: 1px solid red;
+  cursor: pointer;
+
+  .card {
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid yellow;
+
+    img {
+      width: 350px;
+      height: 250px;
+      border-radius: 10px;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  .card:hover {
+    box-shadow: none;
+  }
+
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
