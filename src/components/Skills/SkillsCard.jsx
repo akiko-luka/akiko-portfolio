@@ -1,8 +1,15 @@
 import "./SkillsCard.css"
 
-const SkillsCard = () => {
+const SkillsCard = ({logo, altTitle, logoName}) => {
   return (
-    <div>SkillsCard</div>
+    <>
+     <article class="skills__icon">
+            <div className="card-logo">
+              <img src={logo} alt={altTitle} />
+              <p>{logoName}</p>
+            </div>
+          </article>
+    </>
   )
 }
 

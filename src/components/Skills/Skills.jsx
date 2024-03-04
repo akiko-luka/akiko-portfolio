@@ -1,4 +1,19 @@
 import "./Skills.css";
+import SkillsCard from "./SkillsCard.jsx";
+
+// logos
+import bootstrap from "../../assets/icons/icon-bootstrap.png"
+import css from "../../assets/icons/icon-css.png"
+import git from "../../assets/icons/icon-git.png"
+import github from "../../assets/icons/icon-github.png"
+import html from "../../assets/icons/icon-html.png"
+import js from "../../assets/icons/icon-js.png"
+import markdown from "../../assets/icons/icon-markdown.png"
+import node from "../../assets/icons/icon-node.webp"
+import ps from "../../assets/icons/icon-photoshop.png"
+import react from "../../assets/icons/icon-react.png"
+import sass from "../../assets/icons/icon-sass.png"
+import vscode from "../../assets/icons/icon-vscode.png"
 
 const Skills = () => {
   return (
@@ -6,20 +21,19 @@ const Skills = () => {
       <section className="skills__container">
         <h2 className="skills__heading">Tech Stack</h2>
         <div className="skills__content">
-          <div class="skills__text">
-            <div className="card1"></div>
-            <div className="card2"></div>
-            <div className="card3"></div>
-            <div className="card4"></div>
-            <div className="card5"></div>
-            <div className="card6"></div>
-            <div className="card7"></div>
-            <div className="card8"></div>
-            <div className="card9"></div>
-            <div className="card10"></div>
-            <div className="card11"></div>
-            <div className="card12"></div>
-          </div>
+
+         <SkillsCard logo={html} altTitle={"html"} logoName={"html"}/>
+         <SkillsCard logo={css} altTitle={"css"} logoName={"css"}/>
+         <SkillsCard logo={js} altTitle={"javaScript"} logoName={"javaScript"}/>
+         <SkillsCard logo={node} altTitle={"node"} logoName={"nodeJS"}/>
+         <SkillsCard logo={react} altTitle={"react"} logoName={"reactJS"}/>
+         <SkillsCard logo={git} altTitle={"git"} logoName={"git"}/>
+         <SkillsCard logo={github} altTitle={"github"} logoName={"github"}/>
+         <SkillsCard logo={vscode} altTitle={"vscode"} logoName={"vscode"}/>
+         <SkillsCard logo={markdown} altTitle={"markdown"} logoName={"markdown"}/>
+         <SkillsCard logo={ps} altTitle={"photoshop"} logoName={"photoshop"}/>
+         <SkillsCard logo={sass} altTitle={"sass"} logoName={"sass"}/>
+         <SkillsCard logo={bootstrap} altTitle={"bootstrap"} logoName={"bootstrap"}/>
         </div>
       </section>
     </>

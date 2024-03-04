@@ -5,71 +5,22 @@
   .skills__heading {
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .skills__content {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    padding: 0;
-    gap: 1rem;
+    display: grid;
     justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    width: 2rem;
+    margin: auto;
+    /* gap: 1rem; */
     height: 100%;
-    
-    .skills__text {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-      
-      div {
-        background-color: var(--white);
-        /* border: 1px solid red; */
-        border-radius: 5px;
-        width: 80px;
-        height: 80px;
-        margin-bottom: 1rem;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-      .card1 {
-        background-image: url(../../assets/icons/icon-html.png);
-      }
-      .card2 {
-        background-image: url(../../assets/icons/icon-css.png);
-      }
-      .card3 {
-        background-image: url(../../assets/icons/icon-js.png);
-      }
-      .card4 {
-        background-image: url(../../assets/icons/icon-git.png);
-      }
-      .card5 {
-        background-image: url(../../assets/icons/icon-github.png);
-      }
-      .card6 {
-        background-image: url(../../assets/icons/icon-vscode.png);
-      }
-      .card7 {
-        background-image: url(../../assets/icons/icon-markdown.png);
-      }
-      .card8 {
-        background-image: url(../../assets/icons/icon-photoshop.png);
-      }
-      .card9 {
-        background-image: url(../../assets/icons/icon-sass.png);
-      }
-      .card10 {
-        background-image: url(../../assets/icons/icon-bootstrap.png);
-      }
-      .card11 {
-        background-image: url(../../assets/icons/icon-node.webp);
-      }
-      .card12 {
-        background-image: url(../../assets/icons/icon-react.png);
-      }
-    }
+    /* border: 1px solid salmon; */
   }
 }
