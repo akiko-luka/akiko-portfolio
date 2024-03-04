@@ -1,5 +1,6 @@
 import "./Projects.css";
 import ProjectCard from "./ProjectCard.jsx";
+import SmallProj from "../SmallProj/SmallProj.jsx";
 
 // images
 import battleGame from "../../assets/projects/battle-game.jpg";
@@ -17,6 +18,8 @@ const Projects = () => {
           <ProjectCard image={battleGame} altTitle={"battle-game"} url={"https://github.com/akiko-luka/battle-game"} title={"Dragon⍟Ball 𝐙 Mini Battle Game"} subTitle={"Console-Based App"}/>
 
         </div>
+
+       <SmallProj />
       </section>
     </>
   );
