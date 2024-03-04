@@ -1,27 +1,38 @@
 .card__container {
   /* border: 1px solid red; */
   cursor: pointer;
+  
+  &:hover img {
+    /* box-shadow: none; */
+    filter: contrast(0.5);
+  }
 
   .card {
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     border-radius: 10px;
     margin: 10px;
-    border: 1px solid var(--gray);
-
+    /* border: 1px solid red; */
+    
     img {
+      background-color: var(--gray);
       width: 350px;
       height: 250px;
       border-radius: 10px;
-      object-fit: contain;
+      /* object-fit: contain; */
+      object-fit: cover;
       object-position: center;
+      margin-bottom: 10px;
+      /* border: 1px solid blue; */
     }
   }
-  .card:hover {
-    box-shadow: none;
+
+  h3, p {
+    color: var(--blue);
+    text-align: center;
+    
   }
 
   h3 {
-    text-align: center;
     text-transform: uppercase;
   }
 }

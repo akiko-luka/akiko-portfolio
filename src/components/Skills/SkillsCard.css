@@ -1,14 +1,9 @@
 .skills__icon {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  gap: 1rem;
-  /* border: 3px solid darkgreen; */
   
   .card-logo {
     /* border: 1px solid blue; */
     padding: 10px;
-    width:120px;
+    width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
