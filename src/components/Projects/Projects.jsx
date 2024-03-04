@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <>
       <section className="project__container scroll" id="projects">
-        <h2 className="project__heading">Projects</h2>
+        <h2 className="project__header">Projects</h2>
         <div className="project__content">
 
           <ProjectCard image={akpica} altTitle={"akpica-ecommerce"} url={"https://akpica.netlify.app/"} title={"akpica ecommerce"} subTitle={"E-commerce Website"} />

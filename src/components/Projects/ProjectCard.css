@@ -3,12 +3,10 @@
   cursor: pointer;
   
   &:hover img {
-    /* box-shadow: none; */
     filter: contrast(0.5);
   }
-
+  
   .card {
-    /* box-shadow: var(--box-shadow); */
     border-radius: 10px;
     margin: 10px;
     /* border: 1px solid red; */
@@ -18,10 +16,10 @@
       width: 350px;
       height: 250px;
       border-radius: 10px;
-      /* object-fit: contain; */
       object-fit: cover;
       object-position: center;
       margin-bottom: 10px;
+      transition: all 0.2s ease-in;
       /* border: 1px solid blue; */
     }
   }

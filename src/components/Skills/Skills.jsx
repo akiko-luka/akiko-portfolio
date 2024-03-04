@@ -19,7 +19,7 @@ const Skills = () => {
   return (
     <>
       <section className="skills__container">
-        <h2 className="skills__heading">Tech Stack</h2>
+        <h2 className="skills__header">Tech Stack</h2>
         <div className="skills__content">
 
          <SkillsCard logo={html} altTitle={"html"} logoName={"html"}/>

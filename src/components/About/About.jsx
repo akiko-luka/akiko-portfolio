@@ -3,7 +3,7 @@ import "./About.css";
 const About = () => {
   return (
     <section className="about__container scroll" id="about">
-      <div className="about__heading">
+      <div className="about__header">
         <h2>About</h2>
       </div>
       <div className="about__content">
