@@ -9,7 +9,7 @@ import { FaEnvelope } from "react-icons/fa";
 const Contact = () => {
   return (
     <>
-      <section className="contact__container">
+      <section className="contact__container" id="contact">
         <h2 className="contact__header">Contact me</h2>
         <div className="contact__content">
           <div className="icons">
