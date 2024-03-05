@@ -1,8 +1,9 @@
 .small-proj__container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  background-color: var(--gray);
   padding: 2rem;
 
-  .sp__header{
+  .sp__header {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 4rem;
@@ -26,19 +27,24 @@
 
       img {
         background-color: var(--gray);
-      width: 250px;
-      height: 150px;
-      border-radius: 10px;
-      object-fit: cover;
-      object-position: center;
-      margin-bottom: 10px;
-      transition: all 0.2s ease-in;
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 10px;
+        transition: all 0.2s ease-in;
       }
 
       p {
         color: var(--blue);
         text-align: center;
         text-transform: uppercase;
+
+        &:hover {
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+        }
       }
     }
   }

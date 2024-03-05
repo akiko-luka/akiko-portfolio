@@ -19,8 +19,8 @@ const Projects = () => {
 
         </div>
 
-       <SmallProj />
       </section>
+       <SmallProj />
     </>
   );
 };
