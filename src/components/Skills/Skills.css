@@ -24,3 +24,14 @@
     height: 100%;
   }
 }
+
+@media screen and (min-width: 786px) {
+  .skills__container {
+    flex-direction: row;
+
+    .skills__text {
+      width: 50%;
+      margin: auto;
+    }
+  }
+}
