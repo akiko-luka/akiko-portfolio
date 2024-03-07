@@ -11,7 +11,7 @@
 
   .hero__title {
     padding: 5px;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 900;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -25,58 +25,57 @@
       top: 0;
       right: 0;
       width: 3px;
-      font-size: 3rem;
+      font-size: 4rem;
       background: var(--blue);
       animation: blinkCursor 1500ms steps(1) infinite;
     }
   }
 }
 
-
-  @keyframes blinkCursor {
-    0%,
-    75% {
-      opacity: 1;
-    }
-    76%,
-    100% {
-      opacity: 0;
-    }
+@keyframes blinkCursor {
+  0%,
+  75% {
+    opacity: 1;
   }
-
-  @keyframes typing {
-    0% {
-      width: 0;
-    }
-    25%,
-    50%,
-    75%,
-    100% {
-      width: 400px;
-      /* width: 375.47px; */
-      /* width: 360px; */
-    }
+  76%,
+  100% {
+    opacity: 0;
   }
+}
 
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  25%,
+  50%,
+  75%,
+  100% {
+    width: 550px;
+    /* width: 375.47px; */
+    /* width: 360px; */
+  }
+}
 
-  @media screen and (min-width: 786px) {
+@media screen and (max-width: 750px) {
+  .hero {
+    .hero__title::before,
+    .hero__title {
+      font-size: 3rem;
+    }
 
-    .hero {
-
-      .hero__title::before,
-      .hero__title {
-        font-size: 4rem;
+    @keyframes typing {
+      0% {
+        width: 0;
       }
-
-      @keyframes typing {
-        0% {
-          width: 0;
-        }
-        25%, 50%, 75%, 100% {
-          width: 550px;
-          /* width: 600px; */
-          /* width: 400px; */
-        }
+      25%,
+      50%,
+      75%,
+      100% {
+       /* width: 375.47px; */
+         width: 360px;
+        /* width: 400px; */
       }
     }
   }
+}

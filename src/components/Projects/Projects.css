@@ -1,6 +1,7 @@
 .project__container {
   /* border: 1px solid red; */
   padding: 2rem;
+  flex-direction: row;
 
   .project__content {
     display: flex;
@@ -20,8 +21,8 @@
   }
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (max-width: 786px) {
   .project__container {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
