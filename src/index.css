@@ -7,15 +7,9 @@
   --black: #222529;
   --gray: #f2f2f2;
   --blue: #112a46;
-
-  --shade1: #a9ddf4;
-  --shade2: #81b4ca;
-  --shade3: #598ca2;
-  --shade4: #32677b;
-  --green: #399283;
   --blue-green: #004457;
 
-  --box-shadow: 0 3px 5px #00000099;
+  --box-shadow: 0 3px 5px #000000c0;
 }
 
 /* RESETS */
