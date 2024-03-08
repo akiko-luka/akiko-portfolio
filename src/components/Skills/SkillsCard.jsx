@@ -3,8 +3,8 @@ import "./SkillsCard.css"
 const SkillsCard = ({logo, altTitle, logoName}) => {
   return (
     <>
-     <article class="skills__icon">
-            <div className="card-logo">
+     <article class="icon__container">
+            <div className="icon__card">
               <img src={logo} alt={altTitle} />
               <p>{logoName}</p>
             </div>

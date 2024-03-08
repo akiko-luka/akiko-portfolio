@@ -21,19 +21,18 @@ const Skills = () => {
       <section className="skills__container">
         <h2 className="skills__header">Tech Stack</h2>
         <div className="skills__content">
-
-         <SkillsCard logo={html} altTitle={"html"} logoName={"html"}/>
-         <SkillsCard logo={css} altTitle={"css"} logoName={"css"}/>
-         <SkillsCard logo={js} altTitle={"javaScript"} logoName={"javaScript"}/>
-         <SkillsCard logo={node} altTitle={"node"} logoName={"nodeJS"}/>
-         <SkillsCard logo={react} altTitle={"react"} logoName={"reactJS"}/>
-         <SkillsCard logo={git} altTitle={"git"} logoName={"git"}/>
-         <SkillsCard logo={github} altTitle={"github"} logoName={"github"}/>
-         <SkillsCard logo={vscode} altTitle={"vscode"} logoName={"vscode"}/>
-         <SkillsCard logo={markdown} altTitle={"markdown"} logoName={"markdown"}/>
-         <SkillsCard logo={ps} altTitle={"photoshop"} logoName={"photoshop"}/>
-         <SkillsCard logo={sass} altTitle={"sass"} logoName={"sass"}/>
-         <SkillsCard logo={bootstrap} altTitle={"bootstrap"} logoName={"bootstrap"}/>
+          <SkillsCard logo={html} altTitle={"html"} logoName={"html"}/>
+          <SkillsCard logo={css} altTitle={"css"} logoName={"css"}/>
+          <SkillsCard logo={js} altTitle={"javaScript"} logoName={"javaScript"}/>
+          <SkillsCard logo={node} altTitle={"node"} logoName={"nodeJS"}/>
+          <SkillsCard logo={react} altTitle={"react"} logoName={"reactJS"}/>
+          <SkillsCard logo={git} altTitle={"git"} logoName={"git"}/>
+          <SkillsCard logo={github} altTitle={"github"} logoName={"github"}/>
+          <SkillsCard logo={vscode} altTitle={"vscode"} logoName={"vscode"}/>
+          <SkillsCard logo={markdown} altTitle={"markdown"} logoName={"markdown"}/>
+          <SkillsCard logo={ps} altTitle={"photoshop"} logoName={"photoshop"}/>
+          <SkillsCard logo={sass} altTitle={"sass"} logoName={"sass"}/>
+          <SkillsCard logo={bootstrap} altTitle={"bootstrap"} logoName={"bootstrap"}/>
         </div>
       </section>
     </>
