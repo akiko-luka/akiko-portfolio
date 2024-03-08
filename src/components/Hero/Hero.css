@@ -1,8 +1,11 @@
-.hero {
+.hero__container {
   height: calc(100vh - 100px);
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  place-content: center;
+
   background: url("../../assets/hero-bg-water-colour.jpg");
   background-position: center;
   background-size: cover;
@@ -28,6 +31,37 @@
       font-size: 4rem;
       background: var(--blue);
       animation: blinkCursor 1500ms steps(1) infinite;
+    }
+  }
+
+  .hero-btn {
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    
+    a {
+      border: 2px solid var(--blue);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      padding: 5px;
+      color: var(--blue);
+      box-shadow: var(--box-shadow);
+      font-size: 1.7rem;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.1s ease-in;
+
+      &:hover {
+        box-shadow: none;
+      }
     }
   }
 }
@@ -72,8 +106,8 @@
       50%,
       75%,
       100% {
-       /* width: 375.47px; */
-         width: 360px;
+        /* width: 375.47px; */
+        width: 360px;
         /* width: 400px; */
       }
     }
