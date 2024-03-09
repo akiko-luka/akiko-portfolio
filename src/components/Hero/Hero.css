@@ -17,10 +17,12 @@
     font-size: 4rem;
     font-weight: 900;
     margin-bottom: 1rem;
+
     overflow: hidden;
     white-space: nowrap;
     position: relative;
     animation: typing 8000ms steps(14) forwards;
+    border: 1px solid salmon;
 
     &::before {
       content: "|";
@@ -42,7 +44,7 @@
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
-    
+
     a {
       border: 2px solid var(--blue);
       border-radius: 50%;
@@ -78,16 +80,14 @@
 }
 
 @keyframes typing {
-  0% {
+  from {
     width: 0;
   }
   25%,
   50%,
   75%,
   100% {
-    width: 550px;
-    /* width: 375.47px; */
-    /* width: 360px; */
+    width: 410px;
   }
 }
 
@@ -106,9 +106,7 @@
       50%,
       75%,
       100% {
-        /* width: 375.47px; */
         width: 360px;
-        /* width: 400px; */
       }
     }
   }
