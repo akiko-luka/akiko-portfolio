@@ -22,7 +22,7 @@
     white-space: nowrap;
     position: relative;
     animation: typing 8000ms steps(14) forwards;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
 
     &::before {
       content: "|";
@@ -80,7 +80,7 @@
 }
 
 @keyframes typing {
-  from {
+  0% {
     width: 0;
   }
   25%,
@@ -92,10 +92,11 @@
 }
 
 @media screen and (max-width: 750px) {
-  .hero {
-    .hero__title::before,
-    .hero__title {
-      font-size: 3rem;
+  .hero__container {
+    
+    .hero__title,
+    .hero__title::before {
+      font-size: 2.5rem;
     }
 
     @keyframes typing {
@@ -109,5 +110,6 @@
         width: 360px;
       }
     }
+
   }
 }
