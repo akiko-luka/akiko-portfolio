@@ -9,6 +9,11 @@
   --blue: #112a46;
   --blue-green: #004457;
 
+  --shade1: #009284;
+  --shade2: #2cbbab;
+  --shade3: #85F9BD;
+  --shade4: #344a53;
+
   --box-shadow: 0 3px 5px #000000c0;
 }
 
@@ -39,4 +44,33 @@ a {
 
 .scroll {
   scroll-margin-top: 100px;
+}
+
+/* SELECTION */
+::selection {
+  background-color: var(--blue);
+  color: var(--gray);
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+  border: 1px solid var(--shade4);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--shade4);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--shade1);
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--shade2);
 }
