@@ -4,6 +4,7 @@
   align-items: center;
   padding: 2rem;
   padding-bottom: 5rem;
+  border-bottom: 2px solid var(--gray);
   /* border: 1px solid red; */
 
   .about__header {
