@@ -48,8 +48,8 @@ a {
 
 /* SELECTION */
 ::selection {
-  background-color: var(--blue);
-  color: var(--gray);
+  background-color: var(--shade2);
+  color: var(--white);
 }
 
 /* SCROLLBAR */

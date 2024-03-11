@@ -4,6 +4,7 @@ import SkillsCard from "./SkillsCard.jsx";
 // logos
 import bootstrap from "../../assets/icons/icon-bootstrap.png"
 import css from "../../assets/icons/icon-css.png"
+import express from "../../assets/icons/icon-express.png"
 import git from "../../assets/icons/icon-git.png"
 import github from "../../assets/icons/icon-github.png"
 import html from "../../assets/icons/icon-html.png"
@@ -33,6 +34,7 @@ const Skills = () => {
           <SkillsCard logo={ps} altTitle={"photoshop"} logoName={"photoshop"}/>
           <SkillsCard logo={sass} altTitle={"sass"} logoName={"sass"}/>
           <SkillsCard logo={bootstrap} altTitle={"bootstrap"} logoName={"bootstrap"}/>
+          <SkillsCard logo={express} altTitle={"express"} logoName={"express"}/>
         </div>
       </section>
     </>
