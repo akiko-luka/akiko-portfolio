@@ -9,9 +9,9 @@
   --blue: #112a46;
   --blue-green: #004457;
 
-  --shade1: #009284;
-  --shade2: #2cbbab;
-  --shade3: #85F9BD;
+  --shade1: #32677b;
+  --shade2: #598ca2;
+  --shade3: #81b4ca;
   --shade4: #344a53;
 
   --box-shadow: 0 3px 5px #000000c0;
@@ -56,12 +56,12 @@ a {
 /* width */
 ::-webkit-scrollbar {
   width: 1rem;
-  border: 1px solid var(--shade4);
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: var(--shade4);
+  border: 3px solid var(--shade2);
 }
 
 /* Handle */
