@@ -8,6 +8,7 @@ import express from "../../assets/icons/icon-express.png"
 import git from "../../assets/icons/icon-git.png"
 import github from "../../assets/icons/icon-github.png"
 import html from "../../assets/icons/icon-html.png"
+import mongodb from "../../assets/icons/icon-mongodb.png"
 import js from "../../assets/icons/icon-js.png"
 import markdown from "../../assets/icons/icon-markdown.png"
 import node from "../../assets/icons/icon-node.webp"
@@ -25,16 +26,17 @@ const Skills = () => {
           <SkillsCard logo={html} altTitle={"html"} logoName={"html"}/>
           <SkillsCard logo={css} altTitle={"css"} logoName={"css"}/>
           <SkillsCard logo={js} altTitle={"javaScript"} logoName={"javaScript"}/>
-          <SkillsCard logo={node} altTitle={"node"} logoName={"nodeJS"}/>
-          <SkillsCard logo={react} altTitle={"react"} logoName={"reactJS"}/>
+          <SkillsCard logo={node} altTitle={"node.js"} logoName={"node.js"}/>
+          <SkillsCard logo={react} altTitle={"react"} logoName={"react"}/>
           <SkillsCard logo={git} altTitle={"git"} logoName={"git"}/>
           <SkillsCard logo={github} altTitle={"github"} logoName={"github"}/>
           <SkillsCard logo={vscode} altTitle={"vscode"} logoName={"vscode"}/>
           <SkillsCard logo={markdown} altTitle={"markdown"} logoName={"markdown"}/>
           <SkillsCard logo={ps} altTitle={"photoshop"} logoName={"photoshop"}/>
-          <SkillsCard logo={sass} altTitle={"sass"} logoName={"sass"}/>
           <SkillsCard logo={bootstrap} altTitle={"bootstrap"} logoName={"bootstrap"}/>
-          <SkillsCard logo={express} altTitle={"express"} logoName={"express"}/>
+          <SkillsCard logo={sass} altTitle={"sass"} logoName={"sass"}/>
+          <SkillsCard logo={express} altTitle={"express.js"} logoName={"express.js"}/>
+          <SkillsCard logo={mongodb} altTitle={"mongodb"} logoName={"mongodb"}/>
         </div>
       </section>
     </>
