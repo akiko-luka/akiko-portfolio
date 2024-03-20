@@ -6,10 +6,10 @@
     filter: contrast(0.5);
   }
   
-  .card {
-    border-radius: 10px;
+  .card-proj {
+    /* border-radius: 10px; */
     margin: 10px;
-    /* border: 1px solid red; */
+    padding: 1rem;
     
     img {
       background-color: var(--gray);

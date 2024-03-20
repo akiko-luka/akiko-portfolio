@@ -13,12 +13,6 @@
   /* background: linear-gradient(to right top, #70eedf, #e78828);
   background-attachment: fixed;  */
 
-  /* background: url("../../assets/hero-bg-water-colour.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
-
   .hero-avatar {
     /* border: 1px solid green; */
     width: 250px;
@@ -61,6 +55,10 @@
   .hero-sub{
     position: relative;
     top: 50px;
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2000ms ease 2400ms forwards;
   }
 
   /* .hero-btn {
@@ -115,6 +113,13 @@
   75%,
   100% {
     width: 410px;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
