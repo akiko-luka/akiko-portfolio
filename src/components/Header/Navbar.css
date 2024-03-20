@@ -1,5 +1,6 @@
 .navbar__container {
-  background: var(--blue-green);
+  background: var(--shade2);
+  /* box-shadow: var(--box-shadow); */
   position: sticky;
   padding: 10px;
   height: 100px;
@@ -21,6 +22,7 @@
     width: 70px;
     margin-left: 15px;
     cursor: pointer;
+    box-shadow: var(--box-shadow);
   }
 
   .navbar__menu {
@@ -35,9 +37,9 @@
       padding: 10px;
       transition: transform 400ms ease-in-out;
     }
-    
+
     a:hover {
-      outline: 2px solid #ffffff1a;
+      outline: 1px solid #ffffff1a;
       transform: translateY(-10px);
       border-radius: 5px;
       box-shadow: var(--box-shadow);
@@ -48,7 +50,6 @@
 
 @media screen and (max-width: 750px) {
   .navbar__container {
-
     .navbar__menu a {
       font-size: 1rem;
     }

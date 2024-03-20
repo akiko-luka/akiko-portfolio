@@ -14,11 +14,12 @@ const Hero = () => {
           </div>
           <h1 className="hero__title">Hi, I'm Akiko!</h1>
           <h3 className="hero-sub">Full-Stack Web Developer</h3>
-          <div className="hero-btn">
+
+          {/* <div className="hero-btn">
             <a href="#about">
               <FaAngleDoubleDown />
             </a>
-          </div>
+          </div> */}
         
       </section>
     </>
