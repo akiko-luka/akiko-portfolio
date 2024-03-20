@@ -4,7 +4,7 @@ const ProjectCard = ({ url, image, altTitle, title, subTitle }) => {
   return (
     <>
       <article className="card__container">
-        <div className="card">
+        <div className="card-proj">
           <a href={url} target="_blank">
             <img src={image} alt={altTitle} />
         <h3>{title}</h3>
