@@ -9,7 +9,7 @@ const Navbar = () => {
           <a href="#"><img src={logo} alt="" /></a>
         </div>
         <ul className="navbar__menu">
-          <li><a href="#about">About</a></li>
+          <li><a href="#about" aria-label="about button">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>

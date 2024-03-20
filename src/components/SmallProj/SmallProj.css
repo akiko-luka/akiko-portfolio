@@ -1,7 +1,7 @@
 .small-proj__container {
   /* border: 1px solid red; */
   /* background-color: var(--gray); */
-  border-bottom: 2px solid var(--gray);
+  border-bottom: 3px solid var(--gray);
   padding: 2rem;
   padding-bottom: 5rem;
 

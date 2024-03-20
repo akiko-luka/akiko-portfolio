@@ -1,11 +1,13 @@
 .hero__container {
+  /* height: 100vh; */
+  /* height: calc(100vh - (85px * 2)); */
   height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: 2px solid var(--gray);
+  border-bottom: 3px solid var(--gray);
   /* border: 1px solid red; */
 
   /* background: linear-gradient(to right top, #70eedf, #e78828);
@@ -23,7 +25,7 @@
     height: auto;
     margin-bottom: 1rem;
     position: absolute;
-    top: calc(50% - 140px);
+    /* top: calc(50% - 140px); */
     transform: translateY(-50%);
   }
 
@@ -34,6 +36,8 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
     position: relative;
+    top: 50px;
+    /* top: calc(50% - 140px); */
     /* z-index: 1; */
 
     overflow: hidden;
@@ -54,8 +58,13 @@
     }
   }
 
-  .hero-btn {
-    /* border: 1px solid red; */
+  .hero-sub{
+    position: relative;
+    top: 50px;
+  }
+
+  /* .hero-btn {
+
     position: absolute;
     bottom: 5%;
     left: 50%;
@@ -83,7 +92,7 @@
         box-shadow: none;
       }
     }
-  }
+  } */
 }
 
 @keyframes blinkCursor {
