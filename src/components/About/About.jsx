@@ -1,12 +1,21 @@
+import { useEffect } from "react";
 import "./About.css";
 
+// AOS - animation
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const About = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1500, easing: "ease-in-out" });
+  }, []);
   return (
     <section className="about__container scroll" id="about">
       <div className="about__header">
         <h2>About</h2>
       </div>
-      <div className="about__content">
+      <div className="about__content" data-aos="fade-up">
         <p>Hi there! My name is Akiko.</p>
         <p>I'm currently studying to become a full-stack Web Developer at DCI.</p>
         <p>I am from Japan and now living in Berlin, love ramen, sushi and am also into anime and taking pictures such as most Japanese, I guess.</p>

@@ -1,5 +1,6 @@
 .navbar__container {
-  background: var(--shade2);
+  background: var(--shade1);
+  /* background: var(--rich-black); */
   /* box-shadow: var(--box-shadow); */
   position: sticky;
   padding: 10px;
@@ -20,6 +21,7 @@
     font-weight: 600;
     padding: 2rem; */
     width: 70px;
+    margin-bottom: 8px;
     margin-left: 15px;
     cursor: pointer;
     box-shadow: var(--box-shadow);
