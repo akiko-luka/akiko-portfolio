@@ -18,7 +18,7 @@ const SmallProj = () => {
      <div className="small-proj__container">
           <h3 className="sp__header">Small Projects</h3>
 
-          <div className="sp__content"data-aos="fade-up">
+          <div className="sp__content" data-aos="fade-up">
             <article className="sp-card">
               <a href="https://akiko-luka.github.io/stopwatch/" target="_blank" rel="noreferrer"><img src={stopwatch} alt="stopwatch" />
               <p>stopwatch</p></a>
@@ -29,6 +29,10 @@ const SmallProj = () => {
               <p>stopwatch</p></a>
             </article>
           </div>
+          <p className="seemore">
+            <a href="https://github.com/akiko-luka" target="_blank" rel="noreferrer">See more on my Github . . .</a>
+          </p>
+
         </div>
     </>
   )

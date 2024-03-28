@@ -3,7 +3,7 @@
   /* background-color: var(--gray); */
   border-bottom: 3px solid var(--gray);
   padding: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 
   .sp__header {
     text-align: center;
@@ -15,7 +15,8 @@
     /* border: 1px solid green; */
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    /* margin: auto; */
+    margin: 0 0 4rem 0;
     padding: 0;
     gap: 3rem;
     justify-content: center;
@@ -60,6 +61,17 @@
           text-decoration-thickness: 2px;
         }
       }
+    }
+  }
+  .seemore a {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue);
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

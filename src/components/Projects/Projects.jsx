@@ -8,8 +8,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // images
-import battleGame from "../../assets/projects/battle-game.jpg";
+import portfolio from "../../assets/projects/ss-portfolio-dci.png";
 import akpica from "../../assets/projects/akpica-screenshot.webp";
+import battleGame from "../../assets/projects/battle-game.jpg";
+// import ssbattle from "../../assets/projects/ss1.png";
 
 const Projects = () => {
   useEffect(() => {
@@ -22,19 +24,33 @@ const Projects = () => {
         <h2 className="project__header">Projects</h2>
         <div className="project__content" data-aos="fade-up">
           <ProjectCard
+            image={portfolio}
+            altTitle={"first-portfolio"}
+            url={"https://akpica.netlify.app/"}
+            title={"personal portfolio"}
+            description={
+              "This portfolio represents my first project, which showcases my skills and projects, illustrating my progress in web development and design."
+            }
+          />
+
+          <ProjectCard
             image={akpica}
             altTitle={"akpica-ecommerce"}
             url={"https://akpica.netlify.app/"}
             title={"akpica ecommerce"}
-            subTitle={"E-commerce Website"}
+            description={
+              "This eCommerce platform is designed to provide users with a range of features that make browsing, selecting, and purchasing products."
+            }
           />
 
           <ProjectCard
             image={battleGame}
             altTitle={"battle-game"}
             url={"https://github.com/akiko-luka/battle-game"}
-            title={"Dragon⍟Ball 𝐙 Mini Battle Game"}
-            subTitle={"Console-Based App"}
+            title={"Mini Battle Game"}
+            description={
+              "A turn-based console game built using Node.js. Offering a Dragon Ball Z-themed gaming experience."
+            }
           />
         </div>
       </section>
