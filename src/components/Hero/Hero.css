@@ -3,42 +3,33 @@
   /* height: calc(100vh - (85px * 2)); */
   height: calc(90vh - 100px);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-bottom: 3px solid var(--gray);
   /* border: 1px solid red; */
 
-  /* background: linear-gradient(to right top, #70eedf, #e78828);
-  background-attachment: fixed;  */
-
   .hero-avatar {
-    /* border: 1px solid green; */
+    border: 1px solid green;
     width: 250px;
     height: auto;
-    margin-bottom: 1rem;
-    position: absolute;
-    /* top: calc(50% - 140px); */
-    transform: translateY(-50%);
+    margin: 0 2rem 0 0;
+
   }
 
   .hero__title {
     padding: 5px;
     font-size: 4rem;
     font-weight: 900;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    position: relative;
+    margin: 2rem 0 1rem 2rem;
     top: 50px;
     /* top: calc(50% - 140px); */
     /* z-index: 1; */
 
     overflow: hidden;
     white-space: nowrap;
-    position: relative;
     animation: typing 8000ms steps(14) forwards;
-    /* border: 1px solid salmon; */
+    border: 1px solid salmon;
 
     &::before {
       content: "|";
@@ -53,44 +44,12 @@
   }
 
   .hero-sub{
-    position: relative;
     top: 50px;
     font-size: 1.5rem;
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2000ms ease 2400ms forwards;
   }
-
-  /* .hero-btn {
-
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-
-    a {
-      border: 2px solid var(--blue);
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      padding: 5px;
-      color: var(--blue);
-      box-shadow: var(--box-shadow);
-      font-size: 1.7rem;
-      cursor: pointer;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.1s ease-in;
-
-      &:hover {
-        box-shadow: none;
-      }
-    }
-  } */
 }
 
 @keyframes blinkCursor {
@@ -125,14 +84,33 @@
 
 @media screen and (max-width: 750px) {
   .hero__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     .hero-avatar {
       width: 150px;
-      margin-top: 4rem;
+      margin: 1rem 0 1rem 2rem;
+      position: absolute;
+      transform: translateY(-50%);
     }
 
     .hero__title,
     .hero__title::before {
       font-size: 2.5rem;
+    }
+
+    .hero__title,
+    .hero-sub {
+      position: relative;
+    }
+
+    .hero__title {
+      margin: 2rem 0 1rem;
+    }
+
+    .hero-sub {
+      margin-left: 1rem;
     }
 
     @keyframes typing {

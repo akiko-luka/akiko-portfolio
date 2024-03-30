@@ -12,9 +12,7 @@ const About = () => {
   }, []);
   return (
     <section className="about__container scroll" id="about">
-      <div className="about__header">
-        <h2>About</h2>
-      </div>
+        <h2 className="about__header">About</h2>
       <div className="about__content" data-aos="fade-up">
         <p>Hi there! I'm Akiko Luka.</p>
         <p>I'm currently studying to become a full-stack Web Developer at DCI Digital Career Institute.</p>
