@@ -26,31 +26,36 @@ const Projects = () => {
           <ProjectCard
             image={portfolio}
             altTitle={"first-portfolio"}
-            url={"https://akpica.netlify.app/"}
+            imageUrl={"https://akiko-dci-portfolio.netlify.app/"}
             title={"personal portfolio"}
             description={
               "This portfolio represents my first project, which showcases my skills and projects, illustrating my progress in web development and design."
             }
+            demoUrl={"https://akiko-dci-portfolio.netlify.app/"}
+            codeUrl={"https://github.com/akiko-luka/portfolio-dci"}
           />
 
           <ProjectCard
             image={akpica}
             altTitle={"akpica-ecommerce"}
-            url={"https://akpica.netlify.app/"}
+            imageUrl={"https://akpica.netlify.app/"}
             title={"akpica ecommerce"}
             description={
               "This eCommerce platform is designed to provide users with a range of features that make browsing, selecting, and purchasing products."
             }
+            demoUrl={"https://akpica.netlify.app/"}
+            codeUrl={"https://github.com/akiko-luka/akpica-ecommerce"}
           />
 
           <ProjectCard
             image={battleGame}
             altTitle={"battle-game"}
-            url={"https://github.com/akiko-luka/battle-game"}
+            imageUrl={"https://github.com/akiko-luka/battle-game"}
             title={"Mini Battle Game"}
             description={
               "A turn-based console game built using Node.js. Offering a Dragon Ball Z-themed gaming experience."
             }
+            codeUrl={"https://github.com/akiko-luka/battle-game"}
           />
         </div>
       </section>

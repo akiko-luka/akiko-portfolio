@@ -1,68 +1,93 @@
 .card__container {
   /* border: 1px solid red; */
-  cursor: pointer;
-  
-  &:hover img {
-    filter: contrast(0.5);
-    transition: all 0.2s ease-in;
-  }
-  
+
   .card-proj {
     width: 300px;
-    height: 360px;
+    height: 410px;
     border-radius: 10px;
     margin: 10px;
-    /* padding: 1rem; */
     background-color: var(--gray2);
-    border: 0px solid #0c161c;
+    border: 0px solid var(--rich-black);
+    /* border: 1px solid yellow; */
     padding-bottom: 10px;
     box-shadow: var(--box-shadow);
-    /* border: 1px solid blue; */
 
-    /* &:hover {
-      transition: all 0.2s ease-in;
-      box-shadow: var(--box-shadow);
-    } */
-
-    
     img {
-      background-color: var(--gray);
       width: 300px;
       height: 200px;
       border-radius: 10px 10px 0 0;
       object-fit: cover;
       object-position: center;
       margin-bottom: 1.2rem;
-      /* transition: all 0.2s ease-in; */
-      /* box-shadow: var(--box-shadow); */
-      /* border: 1px solid yellow; */
+      /* padding: 0.5rem; */
 
-      /* &:hover {
+      &:hover {
+        cursor: pointer;
         filter: contrast(0.5);
-        transition: all 0.2s ease-in;
-      } */
+        transition: all 0.2s ease-in-out;
+      }
     }
-  }
 
-  h3, p {
-    color: var(--blue);
-    text-align: center;
-  }
-
-  h3 {
-    text-transform: uppercase;
-    margin-bottom: 8px;
-    /* border: 1px solid green; */
-
-    &:hover {
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
+    h3,
+    p {
+      color: var(--blue);
+      text-align: center;
     }
-  }
 
-  p {
-    /* border: 1px solid red; */
-    padding: 5px;
-    margin: 8px;
+    h3 {
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      /* border: 1px solid green; */
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    p {
+      /* border: 1px solid red; */
+      padding: 5px;
+      margin: 0 8px 0;
+    }
+
+    .btn {
+      display: flex;
+      gap: 2rem;
+      padding: 1rem 2rem 0;
+      /* border: 1px solid red; */
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* gap: 1px; */
+        border: 3px solid var(--shade4);
+        color: var(--blue);
+        background: var(--gray);
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 5px;
+        padding: 5px 5px;
+        height: auto;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background: var(--blue);
+          color: var(--white);
+          border: 3px solid var(--blue);
+        }
+      }
+
+      .demo {
+        width: 150px;
+      }
+
+      .code {
+        width: 110px;
+      }
+    }
   }
 }

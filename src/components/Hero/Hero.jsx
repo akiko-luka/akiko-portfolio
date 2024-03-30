@@ -9,10 +9,12 @@ const Hero = () => {
         <div className="hero-avatar">
           <img src={avatar} alt="avatar" />
         </div>
-        <h1 className="hero__title">Hi, I'm Akiko!</h1>
+        <div>
+        <h1 className="hero__title">Akiko Luka</h1>
         <h3 className="hero-sub">
           Full-Stack Web Developer
         </h3>
+        </div>
       </section>
     </>
   );

@@ -14,19 +14,11 @@
   --shade2: #344a53;
   --shade3: #002a3d;
   --shade4: #00648f;
-  
-  /* --shade22: #598ca2;
-  --shade23: #81b4ca;
-  --shade10: #004daa;
-  --shade13: #001e2b;
-  --blue-green: #004457;
-   */
-  /* 
-   color: #002a3d*/
 
   --rich-black: #0C161C;
 
   --box-shadow: 0 3px 5px #000000c0;
+  --btn-shadow: 0 3px 5px #0C161C;
 }
 
 /* RESETS */
