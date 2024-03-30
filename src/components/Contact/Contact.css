@@ -4,6 +4,7 @@
   border-bottom: 3px solid var(--gray);
 
   .contact__header {
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -36,3 +37,9 @@
     }
   }
 }
+
+/* @media screen and (max-width: 786px) {
+  .contact__header {
+    font-size: 2rem;
+  }
+} */

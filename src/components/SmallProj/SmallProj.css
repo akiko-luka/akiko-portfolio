@@ -6,6 +6,7 @@
   padding-bottom: 3rem;
 
   .sp__header {
+    font-size: 1.5rem;
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 4rem;
@@ -15,7 +16,6 @@
     /* border: 1px solid green; */
     display: flex;
     flex-wrap: wrap;
-    /* margin: auto; */
     margin: 0 0 4rem 0;
     padding: 0;
     gap: 3rem;
@@ -26,14 +26,7 @@
       cursor: pointer;
 
       &:hover img {
-        /* filter: contrast(0.5); */
-
         transform: scale(1.1);
-        /* outline: none; */
-
-        /* scale: 1.1;
-        rotate: 1deg;
-        filter: brightness(0.9); */
       }
 
       img {
@@ -95,5 +88,9 @@
   }
 }
 
-/* @media screen and (max-width: 750px) {
+
+/* @media screen and (max-width: 786px) {
+  .sp__header {
+    font-size: 1.5rem;
+  }
 } */
