@@ -16,6 +16,12 @@ const ProjectCard = ({ imageUrl, image, altTitle, title, description, demoUrl, c
           <p>{description}</p>
 
           <div className="btn">
+            <div className="code">
+              <a href={codeUrl} target="_blank">
+                Code <BsGithub />
+              </a>
+            </div>
+            
             {demoUrl && (
               <div className="demo">
                 <a href={demoUrl} target="_blank">
@@ -24,11 +30,6 @@ const ProjectCard = ({ imageUrl, image, altTitle, title, description, demoUrl, c
               </div>
             )}
 
-            <div className="code">
-              <a href={codeUrl} target="_blank">
-                Code <BsGithub />
-              </a>
-            </div>
           </div>
         </div>
       </article>

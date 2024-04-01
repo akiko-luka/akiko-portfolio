@@ -7,7 +7,7 @@
     border-radius: 10px;
     margin: 10px;
     background-color: var(--gray2);
-    border: 0px solid var(--rich-black);
+    border: 0px solid var(--black2);
     /* border: 1px solid yellow; */
     padding-bottom: 10px;
     box-shadow: var(--box-shadow);
@@ -73,11 +73,13 @@
         padding: 5px 5px;
         height: auto;
         transition: all 0.2s ease-in-out;
+        box-shadow: var(--box-shadow);
 
         &:hover {
-          background: var(--blue);
-          color: var(--white);
-          border: 3px solid var(--blue);
+          /* background: var(--blue);
+          color: var(--white); */
+          /* border: 3px solid var(--blue); */
+          box-shadow: none;
         }
       }
 

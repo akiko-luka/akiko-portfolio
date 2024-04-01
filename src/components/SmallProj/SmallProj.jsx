@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 
 // images
 import stopwatch from "../../assets/small-proj/ss-stopwatch.png";
+import todo from "../../assets/small-proj/ss-todo.png"
 
 const SmallProj = () => {
   useEffect(() => {
@@ -25,17 +26,16 @@ const SmallProj = () => {
             <a
               href="https://akiko-luka.github.io/stopwatch/"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer" >
               <img src={stopwatch} alt="stopwatch" />
               <p>stopwatch</p>
             </a>
           </article>
-          {/* add small proj --this stopwatch is temporary-- */}
+          
           <article className="sp-card">
-            <a href="" target="_blank" rel="noreferrer">
-              <img src={stopwatch} alt="stopwatch" />
-              <p>stopwatch</p>
+            <a href="https://akiko-luka.github.io/todo-list/" target="_blank" rel="noreferrer">
+              <img src={todo} alt="todo" />
+              <p>todo-list</p>
             </a>
           </article>
         </div>

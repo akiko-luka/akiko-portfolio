@@ -10,7 +10,7 @@
   /* border: 1px solid red; */
 
   .hero-avatar {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 250px;
     height: auto;
     margin: 0 2rem 0 0;
@@ -21,15 +21,16 @@
     padding: 5px;
     font-size: 4rem;
     font-weight: 900;
-    margin: 2rem 0 1rem 2rem;
+    margin-left: 2rem;
     top: 50px;
     /* top: calc(50% - 140px); */
     /* z-index: 1; */
 
     overflow: hidden;
+    position: relative;
     white-space: nowrap;
-    animation: typing 8000ms steps(14) forwards;
-    border: 1px solid salmon;
+    animation: typing 8000ms steps(12) forwards;
+    /* border: 1px solid salmon; */
 
     &::before {
       content: "|";
@@ -47,6 +48,7 @@
     top: 50px;
     font-size: 1.5rem;
     opacity: 0;
+    position: relative;
     transform: translateY(3rem);
     animation: fadeInUp 2000ms ease 2400ms forwards;
   }
@@ -90,7 +92,7 @@
 
     .hero-avatar {
       width: 150px;
-      margin: 1rem 0 1rem 2rem;
+      margin: 1rem 0;
       position: absolute;
       transform: translateY(-50%);
     }
