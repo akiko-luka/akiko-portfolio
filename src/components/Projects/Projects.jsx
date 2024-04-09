@@ -8,10 +8,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // images
-import portfolioDci from "../../assets/projects/ss-portfolio-dci.png";
+import portfolioDci from "../../assets/projects/portfolio-dci.png";
 import akpica from "../../assets/projects/akpica-screenshot.webp";
 import battleGame from "../../assets/projects/battle-game.jpg";
-// import ssbattle from "../../assets/projects/ss1.png";
+import theProjects from "../../assets/projects/the-projects.png"
 
 const Projects = () => {
   useEffect(() => {
@@ -35,6 +35,19 @@ const Projects = () => {
             demoUrl={"https://akpica.netlify.app/"}
             codeUrl={"https://github.com/akiko-luka/akpica-ecommerce"}
           />
+
+<ProjectCard
+            image={theProjects}
+            altTitle={"the-projects"}
+            imageUrl={"https://pilag6.github.io/the-projects/"}
+            title={"the projects"}
+            description={
+              "JavaScript Projects for mastering the art of web development through hands-on practice with Vanilla JavaScript."
+            }
+            demoUrl={"https://pilag6.github.io/the-projects/"}
+            codeUrl={"https://github.com/akiko-luka/the-projects"}
+          />
+
 
           <ProjectCard
             image={portfolioDci}

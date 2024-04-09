@@ -10,7 +10,8 @@ import "aos/dist/aos.css";
 
 // images
 import stopwatch from "../../assets/small-proj/ss-stopwatch.png";
-import todo from "../../assets/small-proj/ss-todo.png"
+import todo from "../../assets/small-proj/ss-todo.png";
+import pokemon from "../../assets/small-proj/ss-pokemon-api.jpg"
 
 const SmallProj = () => {
   useEffect(() => {
@@ -22,11 +23,16 @@ const SmallProj = () => {
         <h3 className="sp__header">Small Projects</h3>
 
         <div className="sp__content" data-aos="fade-up">
+
+        <article className="sp-card">
+            <a href="https://akiko-luka.github.io/pokemon-api/" target="_blank" rel="noreferrer">
+              <img src={pokemon} alt="pokemon-api" />
+              <p>pokemon api</p>
+            </a>
+          </article>
+
           <article className="sp-card">
-            <a
-              href="https://akiko-luka.github.io/stopwatch/"
-              target="_blank"
-              rel="noreferrer" >
+            <a href="https://akiko-luka.github.io/stopwatch/" target="_blank" rel="noreferrer">
               <img src={stopwatch} alt="stopwatch" />
               <p>stopwatch</p>
             </a>
@@ -38,6 +44,7 @@ const SmallProj = () => {
               <p>todo-list</p>
             </a>
           </article>
+
         </div>
         <div className="seemore">
           <a href="https://github.com/akiko-luka" target="_blank" rel="noreferrer">
