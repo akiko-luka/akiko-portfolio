@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 import portfolioDci from "../../assets/projects/portfolio-dci.png";
 import akpica from "../../assets/projects/akpica-screenshot.webp";
 import battleGame from "../../assets/projects/battle-game.jpg";
-import theProjects from "../../assets/projects/the-projects.png"
+import theProjects from "../../assets/projects/the-projects.jpeg"
 
 const Projects = () => {
   useEffect(() => {
@@ -39,13 +39,13 @@ const Projects = () => {
 <ProjectCard
             image={theProjects}
             altTitle={"the-projects"}
-            imageUrl={"https://pilag6.github.io/the-projects/"}
+            imageUrl={"https://the-projects-js.netlify.app/"}
             title={"the projects"}
             description={
               "JavaScript Projects for mastering the art of web development through hands-on practice with Vanilla JavaScript."
             }
-            demoUrl={"https://pilag6.github.io/the-projects/"}
-            codeUrl={"https://github.com/akiko-luka/the-projects"}
+            demoUrl={"https://the-projects-js.netlify.app/"}
+            codeUrl={"https://github.com/Pilag6/the-projects"}
           />
 
 

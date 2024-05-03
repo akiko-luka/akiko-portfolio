@@ -1,24 +1,32 @@
 :root {
   font-family: "Roboto", sans-serif;
-  color: var(--blue);
+  color: var(--font);
   background-color: var(--gray);
 
   /* VARIABLES */
-  --white: #ffffff;
-  --black: #222529;
+  --container-bg: #fff;
+  --font: #112a46;
+  --black: #222222;
   --gray: #f2f2f2;
+
   --gray2: #fafafa;
-  --blue: #112a46;
-  
+
   --shade1: #32677b; /*navbar*/
   --shade2: #344a53;
   --shade3: #002a3d;
   --shade4: #00648f;
 
-  --black2: #0C161C;
+  --black2: #0c161c;
 
   --box-shadow: 0 3px 5px #000000c0;
-  --btn-shadow: 0 3px 5px #0C161C;
+  --btn-shadow: 0 3px 5px #0c161c;
+}
+
+.dark-mode {
+  --container-bg: #222222;
+  --shade1: #e9f3f4; /*navbar*/
+  --font: #fff;
+  --gray: #2E2E2E; /*#5A5A5A*/
 }
 
 /* RESETS */
@@ -65,12 +73,10 @@ a {
 /* Track */
 ::-webkit-scrollbar-track {
   background: var(--shade3);
-  /* border: 3px solid var(--shade10); */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  /* background: var(--rich-black); */
   background: var(--shade2);
   /* border-radius: 6px; */
 }
