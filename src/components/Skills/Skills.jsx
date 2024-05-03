@@ -20,12 +20,13 @@ import node from "../../assets/icons/icon-node.webp";
 import ps from "../../assets/icons/icon-photoshop.png";
 import react from "../../assets/icons/icon-react.png";
 import sass from "../../assets/icons/icon-sass.png";
+import tailwind from "../../assets/icons/icon-tailwind.png";
+import ts from "../../assets/icons/icon-ts.png";
 import vscode from "../../assets/icons/icon-vscode.png";
 
 const Skills = () => {
-
   useEffect(() => {
-    AOS.init({ duration: 1500, easing:"ease-in-out" });
+    AOS.init({ duration: 1500, easing: "ease-in-out" });
   }, []);
 
   return (
@@ -52,6 +53,12 @@ const Skills = () => {
           <SkillsCard logo={node} altTitle={"node.js"} logoName={"node.js"} />
           <SkillsCard logo={html} altTitle={"html"} logoName={"html"} />
           <SkillsCard logo={css} altTitle={"css"} logoName={"css"} />
+          <SkillsCard
+            logo={tailwind}
+            altTitle={"tailwind"}
+            logoName={"tailwind"}
+          />
+       
           <SkillsCard logo={git} altTitle={"git"} logoName={"git"} />
           <SkillsCard logo={github} altTitle={"github"} logoName={"github"} />
           <SkillsCard logo={vscode} altTitle={"vscode"} logoName={"vscode"} />
@@ -67,6 +74,11 @@ const Skills = () => {
             logoName={"bootstrap"}
           />
           <SkillsCard logo={sass} altTitle={"sass"} logoName={"sass"} />
+          <SkillsCard
+            logo={ts}
+            altTitle={"typescript"}
+            logoName={"typescript"}
+          />
         </div>
       </section>
     </>

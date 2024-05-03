@@ -1,6 +1,4 @@
 .small-proj__container {
-  /* border: 1px solid red; */
-  /* background-color: var(--gray); */
   border-bottom: 3px solid var(--gray);
   padding: 2rem;
   padding-bottom: 3rem;
@@ -44,7 +42,7 @@
       }
 
       p {
-        color: var(--blue);
+        color: var(--font);
         text-align: center;
         text-transform: uppercase;
         font-weight: 500;
@@ -67,9 +65,9 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      color: var(--blue);
+      color: var(--font);
       width: 220px;
-      border: 3px solid var(--shade4);
+      border: 3px solid var(--shade1);
       background: var(--gray);
       font-size: 1rem;
       font-weight: 500;
@@ -80,9 +78,9 @@
       transition: all 0.2s ease-in-out;
 
       &:hover {
-        background: var(--blue);
-        color: var(--white);
-        border: 3px solid var(--blue);
+        background: var(--font);
+        color: var(--container-bg);
+        border: 3px solid var(--font);
       }
     }
   }
