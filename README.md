@@ -1,1 +1,1 @@
-**:fast_forward: [Link to my Portfolio](https://akikoluka.netlify.app/)**
+**:fast_forward: [Link to my Portfolio](https://akiko-luka.netlify.app/)**
