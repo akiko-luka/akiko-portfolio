@@ -14,25 +14,25 @@ const Contact = () => {
         <div className="contact__content">
 
         <div className="icons">
-            <a href="mailto:ak.luka051@gmail.com" target="_blank" rel="noreferrer">
+            <a href="mailto:ak.luka051@gmail.com" target="_blank" rel="noreferrer" title="email">
           <FaEnvelope />
             </a>
           </div>
           
           <div className="icons">
-            <a href="https://github.com/akiko-luka" target="_blank" rel="noreferrer">
+            <a href="https://github.com/akiko-luka" target="_blank" rel="noreferrer" title="github">
           <BsGithub />
             </a>
           </div>
 
           <div className="icons">
-            <a href="https://www.linkedin.com/in/akiko-luka/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/akiko-luka/" target="_blank" rel="noreferrer" title="linkedin">
           <FaLinkedin />
             </a>
           </div>
 
           <div className="icons">
-            <a href="https://twitter.com/iamAkiii_" target="_blank" rel="noreferrer">
+            <a href="https://twitter.com/iamAkiii_" target="_blank" rel="noreferrer" title="x">
           <FaSquareXTwitter />
             </a>
           </div>
