@@ -1,32 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  font-family: "Roboto", sans-serif;
-  color: var(--font);
-  background-color: var(--gray);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
-  /* VARIABLES */
-  --container-bg: #fff;
-  --font: #112a46;
-  --black: #222222;
-  --gray: #f2f2f2;
+  color-scheme: light dark;
+  color: #242424;
+  background-color: #f2f2f2;
+  /* background-color: #242424; */
 
-  --gray2: #fafafa;
-
-  --shade1: #32677b; /*navbar*/
-  --shade2: #344a53;
-  --shade3: #002a3d;
-  --shade4: #00648f;
-
-  --black2: #0c161c;
-
-  --box-shadow: 0 3px 5px #000000c0;
-  --btn-shadow: 0 3px 5px #0c161c;
-}
-
-.dark-mode {
-  --container-bg: #222222;
-  --shade1: #e9f3f4; /*navbar*/
-  --font: #fff;
-  --gray: #2E2E2E; /*#5A5A5A*/
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* RESETS */
@@ -60,8 +49,8 @@ a {
 
 /* SELECTION */
 ::selection {
-  background-color: var(--shade1);
-  color: var(--white);
+  background-color: #32677b;
+  color: #fff;
 }
 
 /* SCROLLBAR */
@@ -70,18 +59,23 @@ a {
   width: 1rem;
 }
 
-/* Track */
+/* TRACK */
 ::-webkit-scrollbar-track {
-  background: var(--shade3);
+  background: #002a3d; 
 }
 
-/* Handle */
+/* HANDLE */
 ::-webkit-scrollbar-thumb {
-  background: var(--shade2);
-  /* border-radius: 6px; */
+  background: #344a53;
 }
 
-/* Handle on hover */
+/* HANDLE on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--shade4);
+  background: #00648f;; 
 }
+
+/* 
+  --shade1: #32677b; /*navbar*/
+  /* --shade2: #344a53; */
+  /* --shade3: #002a3d; */
+  /* --shade4: #00648f; */

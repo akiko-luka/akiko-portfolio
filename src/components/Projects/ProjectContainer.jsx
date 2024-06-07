@@ -1,30 +1,22 @@
-import { useEffect } from "react";
-import "./Projects.css";
-import ProjectCard from "./ProjectCard.jsx";
-import SmallProj from "../SmallProj/SmallProj.jsx";
-
-// AOS - animation
-import AOS from "aos";
-import "aos/dist/aos.css";
+import ProjectCard from "./ProjectCard";
+import SmallProj from "../SmallProj/SmallProjContainer";
 
 // images
 import portfolioDci from "../../assets/projects/portfolio-dci.png";
 import akpica from "../../assets/projects/akpica-screenshot.webp";
 import battleGame from "../../assets/projects/battle-game.jpg";
-import theProjects from "../../assets/projects/the-projects.jpeg"
+import theProjects from "../../assets/projects/the-projects.jpeg";
 
-const Projects = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1500, easing: "ease-in-out" });
-  }, []);
-
+const ProjectContainer = () => {
   return (
     <>
-      <section className="project__container scroll" id="projects">
-        <h2 className="project__header">Projects</h2>
-        <div className="project__content" data-aos="fade-up">
-
-        <ProjectCard
+      <section
+        id="projects"
+        className="scroll border-gray-main flex items-center justify-center border-b-[3px] p-8 pb-20 flex-col"
+      >
+        <h2 className="mb-16 mt-4 text-[2rem] font-[700]">Projects</h2>
+        <div className="m-auto flex h-full flex-wrap justify-center gap-4 p-0">
+          <ProjectCard
             image={akpica}
             altTitle={"akpica-ecommerce"}
             imageUrl={"https://akpica.netlify.app/"}
@@ -36,7 +28,7 @@ const Projects = () => {
             codeUrl={"https://github.com/akiko-luka/akpica-ecommerce"}
           />
 
-<ProjectCard
+          <ProjectCard
             image={theProjects}
             altTitle={"the-projects"}
             imageUrl={"https://the-projects-js.netlify.app/"}
@@ -47,7 +39,6 @@ const Projects = () => {
             demoUrl={"https://the-projects-js.netlify.app/"}
             codeUrl={"https://github.com/Pilag6/the-projects"}
           />
-
 
           <ProjectCard
             image={portfolioDci}
@@ -73,9 +64,9 @@ const Projects = () => {
           />
         </div>
       </section>
-      <SmallProj />
+        <SmallProj />
     </>
   );
 };
 
-export default Projects;
+export default ProjectContainer;
