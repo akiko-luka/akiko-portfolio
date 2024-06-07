@@ -1,15 +1,11 @@
-import './App.css'
-import Home from "./pages/Home.jsx"
+import React from 'react'
+import Home from './pages/Home'
 
-function App() {
-
-
+const App = () => {
   return (
-    <>
-    <div className="container">
+    <div>
       <Home />
     </div>
-    </>
   )
 }
 

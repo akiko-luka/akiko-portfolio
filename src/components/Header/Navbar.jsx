@@ -1,20 +1,23 @@
-import "./Navbar.css";
-import logo from "../../assets/logo.jpg"
+import React from "react";
+
+const linksStyle =
+  "text-white-main text-base md:text-2xl font-[700] p-[10px] transition duration-400 ease-in-out hover:rounded hover:outline outline-1 outline-[#ffffff1a] hover:shadow-box-shadow mr-1 active:bg-green-light active:text-blue-main";
 
 const Navbar = () => {
   return (
-    <>
-      <nav className="navbar__container">
-        <div className="logo">
-          <a href="#"><img src={logo} alt="" /></a>
-        </div>
-        <ul className="navbar__menu">
-          <li><a href="#about" aria-label="about button">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div className="flex">
+      <nav>
+        <a href="#about" className={linksStyle}>
+          About
+        </a>
+        <a href="#projects" className={linksStyle}>
+          Projects
+        </a>
+        <a href="#contact" className={linksStyle}>
+          Contact
+        </a>
       </nav>
-    </>
+    </div>
   );
 };
 
