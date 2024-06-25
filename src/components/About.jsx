@@ -1,10 +1,15 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../contexts/DarkModeContext.jsx";
+
 const pStyle = "leading-8 mb-4";
 
 const About = () => {
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
     <section
       id="about"
-      className="scroll border-gray-main flex flex-col items-center border-b-[3px] p-8 pb-20"
+      className={`scroll flex flex-col items-center border-b-[3px] p-8 pb-20 ${darkMode ? "bg-black-main text-white-main border-gray-dark" : "border-gray-main"}`}
     >
       <h2 className="mb-16 mt-4 text-[2rem] font-[700]">About</h2>
       <div className="flex max-w-[700px] flex-col">

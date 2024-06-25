@@ -1,23 +1,41 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../../contexts/DarkModeContext.jsx";
+
 import ProjectCard from "./ProjectCard";
 import SmallProj from "../SmallProj/SmallProjContainer";
 
 // images
 import portfolioDci from "../../assets/projects/portfolio-dci.png";
-import akpica from "../../assets/projects/akpica-screenshot.webp";
+import akpicaEcommerce from "../../assets/projects/akpica-ecommerce.webp";
 import battleGame from "../../assets/projects/battle-game.jpg";
 import theProjects from "../../assets/projects/the-projects.jpeg";
+import akpicaBlog from "../../assets/projects/akpica-blog.jpg";
 
 const ProjectContainer = () => {
+    const { darkMode } = useContext(DarkModeContext);
+
   return (
     <>
       <section
         id="projects"
-        className="scroll border-gray-main flex items-center justify-center border-b-[3px] p-8 pb-20 flex-col"
+        className={`scroll flex flex-col items-center justify-center border-b-[3px] p-8 pb-20 ${darkMode ? "border-gray-dark bg-black-main text-white-main" : ""}`}
       >
         <h2 className="mb-16 mt-4 text-[2rem] font-[700]">Projects</h2>
         <div className="m-auto flex h-full flex-wrap justify-center gap-4 p-0">
           <ProjectCard
-            image={akpica}
+            image={akpicaBlog}
+            altTitle={"akpica-blog"}
+            imageUrl={"https://akpicablog.netlify.app/"}
+            title={"akpica blog"}
+            description={
+              "This blog provides web development resources, offering tools and knowledge for developers of all levels to succeed."
+            }
+            demoUrl={"https://akpicablog.netlify.app/"}
+            codeUrl={"https://github.com/akiko-luka/akpica-blog"}
+          />
+
+          <ProjectCard
+            image={akpicaEcommerce}
             altTitle={"akpica-ecommerce"}
             imageUrl={"https://akpica.netlify.app/"}
             title={"akpica ecommerce"}
@@ -46,7 +64,7 @@ const ProjectContainer = () => {
             imageUrl={"https://akiko-dci-portfolio.netlify.app/"}
             title={"first project"}
             description={
-              "This portfolio represents my first project, which showcases my skills and projects, illustrating my progress in web development and design."
+              "This project showcases my basic HTML and CSS skills, marking a key milestone in my web development journey."
             }
             demoUrl={"https://akiko-dci-portfolio.netlify.app/"}
             codeUrl={"https://github.com/akiko-luka/portfolio-dci"}
@@ -64,7 +82,7 @@ const ProjectContainer = () => {
           />
         </div>
       </section>
-        <SmallProj />
+      <SmallProj />
     </>
   );
 };

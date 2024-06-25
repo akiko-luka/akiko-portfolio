@@ -1,7 +1,10 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../../contexts/DarkModeContext.jsx";
+
 import SkillsCard from "./SkillsCard";
 
 // icons
-import bootstrap from "../../assets/icons/icon-bootstrap.png"
+import bootstrap from "../../assets/icons/icon-bootstrap.png";
 import css from "../../assets/icons/icon-css.png";
 import express from "../../assets/icons/icon-express.png";
 import git from "../../assets/icons/icon-git.png";
@@ -19,11 +22,14 @@ import tailwind from "../../assets/icons/icon-tailwind.png";
 import vscode from "../../assets/icons/icon-vscode.png";
 
 const SkillsContainer = () => {
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
-    <section className="border-gray-main flex md:flex-col flex-wrap items-center justify-center border-b-[3px] p-8 pb-20">
+    <section
+      className={`flex flex-wrap items-center justify-center border-b-[3px] p-8 pb-20 md:flex-col ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "border-gray-main text-black-main"}`}
+    >
       <h2 className="mb-16 mt-4 text-2xl font-[700]">Tech Stack</h2>
       <div className="m-auto flex w-[700px] flex-wrap items-start justify-center">
-
         <SkillsCard icon={js} altTitle={"javaScript"} iconName={"javaScript"} />
         <SkillsCard icon={mongodb} altTitle={"mongodb"} iconName={"mongodb"} />
         <SkillsCard

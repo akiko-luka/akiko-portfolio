@@ -1,3 +1,7 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../contexts/DarkModeContext.jsx";
+
+// Components
 import About from "../components/About.jsx";
 import ContactContainer from "../components/Contact/ContactContainer.jsx";
 import Header from "../components/Header/Header";
@@ -6,9 +10,12 @@ import ProjectContainer from "../components/Projects/ProjectContainer.jsx";
 import SkillsContainer from "../components/Skills/SkillsContainer.jsx";
 
 const Home = () => {
+  const { darkMode } = useContext(DarkModeContext);
   return (
     <>
-      <div className="bg-white-main min-h-screen mx-auto max-w-[1200px]">
+      <div
+        className={`mx-auto min-h-screen max-w-[1200px] ${darkMode ? "bg-black-main" : "bg-white-main"}`}
+      >
         <Header />
         <Hero />
         <About />
@@ -16,7 +23,7 @@ const Home = () => {
         <ProjectContainer />
         <ContactContainer />
 
-        <footer className="text-center p-4">
+        <footer className={`p-4 text-center ${darkMode ? "text-white" : "text-black"}`}>
           &copy; {new Date().getFullYear()} | Akiko Luka
         </footer>
       </div>
