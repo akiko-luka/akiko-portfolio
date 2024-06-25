@@ -51,7 +51,7 @@ const SmallProj = () => {
         <a
           href="https://github.com/akiko-luka"
           target="_blank"
-          className={`m-2 flex w-56 items-center justify-center gap-[10px] border-[3px] border-solid p-2 text-base font-[500] transition-all duration-200 ease-in-out hover:bg-green-light hover:text-blue-main hover:shadow-none ${darkMode ? "shadow-box-shadow-dark border-gray-main" : "border-black-main bg-gray-main shadow-box-shadow"}`}
+          className={`m-2 flex w-56 items-center justify-center gap-[10px] border-[3px] border-solid p-2 text-base font-[500] transition-all duration-200 ease-in-out hover:bg-green-light hover:text-blue-main hover:shadow-none ${darkMode ? "shadow-box-shadow-dark border-gray-main bg-gray-dark" : "border-black-main bg-gray-main shadow-box-shadow"}`}
         >
           See more on my Github <BsGithub />
         </a>
