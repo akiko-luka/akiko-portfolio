@@ -1,9 +1,10 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../../contexts/DarkModeContext.jsx";
+
 // icons
 import { IoPlaySharp } from "react-icons/io5";
 import { BsGithub } from "react-icons/bs";
 
-const btnStyle =
-  "flex items-center justify-center gap-2 border-2 border-solid border-black-main bg-gray-main p-1 text-base font-[500] shadow-box-shadow transition-all duration-200 ease-in-out hover:bg-green-light hover:text-blue-main hover:shadow-none active:bg-green-dark active:text-white-main active:shadow-none";
 
 const ProjectCard = ({
   imageUrl,
@@ -13,7 +14,11 @@ const ProjectCard = ({
   description,
   demoUrl,
   codeUrl,
-}) => {
+  }) => {
+    const { darkMode } = useContext(DarkModeContext);
+    
+    const btnStyle = `flex items-center justify-center gap-2 border-2 border-solid p-1 text-base font-[500] shadow-box-shadow transition-all duration-200 ease-in-out hover:bg-green-light hover:text-blue-main hover:shadow-none active:bg-green-dark active:text-white-main active:shadow-none ${darkMode ? "bg-gray-dark text-white-main" : "bg-gray-main border-black-main"}`;
+
   return (
     <>
       <article>
@@ -24,7 +29,7 @@ const ProjectCard = ({
               alt={altTitle}
               className="mb-2 h-[200px] w-[300px] rounded-t-xl object-cover object-center transition-all duration-200 ease-in-out hover:contrast-50"
             />
-            <h3 className="text-center text-lg font-[700] uppercase decoration-2 transition-all duration-200 ease-in-out hover:underline pb-1">
+            <h3 className="pb-1 text-center text-lg font-[700] uppercase decoration-2 transition-all duration-200 ease-in-out hover:underline">
               {title}
             </h3>
           </a>

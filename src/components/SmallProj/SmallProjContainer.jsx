@@ -1,5 +1,7 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../../contexts/DarkModeContext.jsx";
+
 import SmallProjCard from "./SmallProjCard";
-// import { Link, NavLink } from "react-router-dom";
 
 // icon
 import { BsGithub } from "react-icons/bs";
@@ -10,8 +12,12 @@ import todo from "../../assets/small-proj/ss-todo.png";
 import pokemon from "../../assets/small-proj/ss-pokemon-api.jpg";
 
 const SmallProj = () => {
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
-    <section className="flex flex-col flex-wrap items-center border-b-[3px] border-gray-main p-8 pb-12">
+    <section
+      className={`flex flex-col flex-wrap items-center border-b-[3px] p-8 pb-12 ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "border-gray-main"}`}
+    >
       <h2 className="mb-16 mt-4 text-2xl font-[700]">Small Projects</h2>
       <div className="mb-16 flex h-full flex-wrap justify-center gap-12">
         <SmallProjCard
@@ -38,7 +44,7 @@ const SmallProj = () => {
         <a
           href="https://github.com/akiko-luka"
           target="_blank"
-          className="m-2 flex w-56 items-center justify-center gap-[10px] border-[3px] border-solid border-blue-main p-2 text-base font-[500] shadow-box-shadow transition-all duration-200 ease-in-out hover:bg-blue-main hover:text-white-main hover:shadow-none"
+          className={`m-2 flex w-56 items-center justify-center gap-[10px] border-[3px] border-solid  p-2 text-base font-[500] shadow-box-shadow transition-all duration-200 ease-in-out hover:bg-green-light hover:text-blue-main hover:shadow-none ${darkMode ? "border-gray-main" : "border-black-main bg-gray-main"}`}
         >
           See more on my Github <BsGithub />
         </a>

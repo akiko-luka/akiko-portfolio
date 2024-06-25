@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../../contexts/DarkModeContext.jsx";
+
 import ContactCard from "./ContactCard";
 
 // icons
@@ -6,13 +9,14 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa";
 
-
 const ContactContainer = () => {
+   const { darkMode } = useContext(DarkModeContext);
+
   return (
     <>
       <section
         id="contact"
-        className="scroll flex flex-col flex-wrap items-center border-b-[3px] border-gray-main p-8"
+        className={`scroll flex flex-col flex-wrap items-center border-b-[3px] p-8 ${darkMode ? "bg-black-main text-white-main border-gray-dark" : "border-gray-main"}`}
       >
         <h2 className="mb-4 mt-4 text-[2rem] font-[700]">Contact me</h2>
 

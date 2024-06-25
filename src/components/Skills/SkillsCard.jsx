@@ -7,7 +7,7 @@ const SkillsCard = ({ icon, altTitle, iconName }) => {
           <img
             src={icon}
             alt={altTitle}
-            className="mb-[7px] h-[60px] w-[60px] object-contain object-center"
+            className="mb-[7px] h-[60px] w-[60px] object-contain object-center bg-white-main/40"
           />
           <p className="text-center uppercase">{iconName}</p>
         </div>
