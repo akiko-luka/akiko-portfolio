@@ -10,6 +10,7 @@ const ContactCard = ({ link, title, icon }) => {
           className=""
         >
           {icon}
+         
         </a>
       </div>
     </>
