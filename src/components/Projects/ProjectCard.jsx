@@ -5,7 +5,6 @@ import { DarkModeContext } from "../../contexts/DarkModeContext.jsx";
 import { IoPlaySharp } from "react-icons/io5";
 import { BsGithub } from "react-icons/bs";
 
-
 const ProjectCard = ({
   imageUrl,
   image,
@@ -14,15 +13,17 @@ const ProjectCard = ({
   description,
   demoUrl,
   codeUrl,
-  }) => {
-    const { darkMode } = useContext(DarkModeContext);
-    
-    const btnStyle = `flex items-center justify-center gap-2 border-2 border-solid p-1 text-base font-[500] shadow-box-shadow transition-all duration-200 ease-in-out hover:bg-green-light hover:text-blue-main hover:shadow-none active:bg-green-dark active:text-white-main active:shadow-none ${darkMode ? "bg-gray-dark text-white-main" : "bg-gray-main border-black-main"}`;
+}) => {
+  const { darkMode } = useContext(DarkModeContext);
+
+  const btnStyle = `flex items-center justify-center gap-2 border-2 border-solid p-1 text-base font-[500] transition-all duration-200 ease-in-out hover:bg-green-light hover:text-blue-main hover:shadow-none active:bg-green-dark active:text-white-main active:shadow-none ${darkMode ? "bg-gray-dark text-white-main shadow-box-shadow-dark" : "bg-gray-main border-black-main shadow-box-shadow"}`;
 
   return (
     <>
       <article>
-        <div className="m-[10px] h-[430px] w-[300px] rounded-xl border-0 border-solid border-black-main shadow-box-shadow">
+        <div
+          className={`m-[10px] h-[430px] w-[300px] rounded-xl border-0 border-solid border-black-main ${darkMode ? "shadow-box-shadow-dark" : "shadow-box-shadow"}`}
+        >
           <a href={imageUrl} target="_blank">
             <img
               src={image}

@@ -19,6 +19,7 @@ export default {
       },
       boxShadow: {
         "box-shadow": "0 3px 5px #000000c0",
+        "box-shadow-dark": "0 3px 5px #00000080",
       },
     },
   },

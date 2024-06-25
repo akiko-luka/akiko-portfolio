@@ -7,7 +7,7 @@ const ContactCard = ({ link, title, icon }) => {
   return (
     <>
       <div
-        className={`flex h-[50px] w-[50px] items-center justify-center border-2 border-solid text-[2rem] shadow-box-shadow transition-all duration-100 ease-in-out hover:bg-green-light hover:text-blue-main ${darkMode ? "" : "border-black-main hover:shadow-none"}`}
+        className={`flex h-[50px] w-[50px] items-center justify-center border-2 border-solid text-[2rem] transition-all duration-100 ease-in-out hover:bg-green-light hover:text-blue-main hover:shadow-none ${darkMode ? "shadow-box-shadow-dark" : "border-black-main shadow-box-shadow"}`}
       >
         <a
           href={link}
