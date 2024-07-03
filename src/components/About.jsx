@@ -9,19 +9,21 @@ const About = () => {
   return (
     <section
       id="about"
-      className={`scroll flex flex-col items-center border-b-[3px] p-8 pb-20 ${darkMode ? "bg-black-main text-white-main border-gray-dark" : "border-gray-main"}`}
+      className={`scroll flex flex-col items-center border-b-[3px] p-8 pb-20 ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "border-gray-main"}`}
     >
       <h2 className="mb-16 mt-4 text-[2rem] font-[700]">About</h2>
       <div className="flex max-w-[700px] flex-col">
-        <p className={pStyle}>Hey there! I'm Akiko Luka.</p>
+        <p className={pStyle}>
+          Hey there! I'm <strong>Akiko Luka</strong>.
+        </p>
         <p className={pStyle}>
           I'm currently studying to become a Full-Stack Web Developer at DCI
           Digital Career Institute.
         </p>
         <p className={pStyle}>
-          Originally from Japan and now living in Berlin, I'm all about ramen,
-          sushi, anime, and photography – which are common among many Japanese
-          individuals..
+          Originally from <strong>Japan</strong> and now living in{" "}
+          <strong>Berlin</strong>, I'm all about ramen, sushi, anime, and
+          photography – which are common among many Japanese individuals..
         </p>
         <p className={pStyle}>
           Being a hard working individual with great attention and focus to

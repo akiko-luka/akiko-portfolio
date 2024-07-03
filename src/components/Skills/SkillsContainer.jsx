@@ -13,7 +13,7 @@ import html from "../../assets/icons/icon-html.png";
 import js from "../../assets/icons/icon-js.png";
 import markdown from "../../assets/icons/icon-markdown.png";
 import mongodb from "../../assets/icons/icon-mongodb.png";
-import node from "../../assets/icons/icon-node.webp";
+import node from "../../assets/icons/icon-node.png";
 import ps from "../../assets/icons/icon-photoshop.png";
 import react from "../../assets/icons/icon-react.png";
 import sass from "../../assets/icons/icon-sass.png";

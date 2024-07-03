@@ -1,19 +1,22 @@
 import { useContext } from "react";
 import { DarkModeContext } from "../contexts/DarkModeContext.jsx";
 
+// image
 import avatar from "../assets/avatar.png";
+import bg from "../assets/jp-drawing.webp"
+
 const Hero = () => {
   const { darkMode } = useContext(DarkModeContext);
   return (
     <>
       <section
-        className={`flex h-[calc(90vh-100px)] items-center justify-center border-b-[3px] ${darkMode ? "bg-black-main text-white-main border-gray-dark" : "border-gray-main"}`}
+        className={`flex h-[60vh] items-center justify-center md:gap-16 border-b-[3px] ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "border-gray-main"}`}
       >
-        <div>
+        <div className="h-auto w-40 md:w-[250px]">
           <img
             src={avatar}
             alt="avatar"
-            className="m-4 h-auto w-[150px] md:mr-8 md:w-[250px]"
+            className="mx-4 h-full w-full md:mr-8"
           />
         </div>
         <div>

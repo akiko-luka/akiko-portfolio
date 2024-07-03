@@ -10,6 +10,7 @@ export default {
         "gray-main": "#f2f2f2",
         "gray-dark": "#2F2F2F",
         "blue-main": "#112a46",
+        "blue-light": "#e7f2fe",
         "green-light": "#cfd8dc",
         "green-dark": "#32677b",
         // "green-dark": "#224653",

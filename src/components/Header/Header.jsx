@@ -5,7 +5,7 @@ import logo from "../../assets/logo.jpg";
 
 const Header = () => {
   return (
-    <header className="bg-green-dark sticky top-0 z-10 flex h-[100px] flex-wrap items-center justify-between p-[10px]">
+    <header className="bg-green-dark sticky top-0 z-10 flex h-[100px] flex-wrap items-center justify-between px-2 md:px-24">
       <a href="#">
         <img
           src={logo}

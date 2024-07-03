@@ -18,12 +18,14 @@ const Home = () => {
       >
         <Header />
         <Hero />
-        <About />
-        <SkillsContainer />
         <ProjectContainer />
+        <SkillsContainer />
         <ContactContainer />
+        <About />
 
-        <footer className={`p-4 text-center ${darkMode ? "text-white" : "text-black"}`}>
+        <footer
+          className={`p-4 text-center ${darkMode ? "text-white" : "bg-green-light text-black"}`}
+        >
           &copy; {new Date().getFullYear()} | Akiko Luka
         </footer>
       </div>
