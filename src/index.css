@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: #242424;
-  background-color:#2F2F2F;
+  background-color: #2f2f2f;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,6 +17,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "H Hachimaki";
+  src: url("/fonts/Hachimaki-EawZ8.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* RESETS */
 * {
@@ -66,16 +72,13 @@ a {
 
 /* HANDLE */
 ::-webkit-scrollbar-thumb {
-  background: #90E4E1;
+  background: #90e4e1;
+  box-shadow:
+    inset 0 0 6px rgba(0, 0, 0, 0.3),
+    0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* HANDLE on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFDE59;
+  background: #ffde59;
 }
-
-/* 
-  --shade1: #32677b; /*navbar*/
-  /* --shade2: #344a53; */
-  /* --shade3: #002a3d; */
-  /* --shade4: #00648f; */

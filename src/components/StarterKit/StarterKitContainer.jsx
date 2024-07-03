@@ -11,10 +11,12 @@ const StarterKitContainer = () => {
   const { darkMode } = useContext(DarkModeContext);
   return (
     <section
-      className={`flex flex-col flex-wrap items-center border-b-[3px] p-8 pb-12 ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "bg-green-light border-gray-main"}`}
+      className={`flex flex-col flex-wrap items-center border-b-[3px] p-8 pb-12 ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "border-gray-main bg-green-light"}`}
     >
-      <h2 className="mb-16 mt-4 text-2xl font-[700]">Starter Kits</h2>
-      <p className="mb-14 px-2 md:px-24">
+      <h2 className="mb-16 mt-4 font-jp-font text-3xl font-[700]">
+        Starter Kits
+      </h2>
+      <p className="mb-14 px-2 leading-8 md:px-24">
         Here is a series of Starter Kits I developed to spare fellow developers
         from the complexities of configuration and setup. These kits enable you
         to jump right into coding, letting you concentrate on bringing your

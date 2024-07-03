@@ -13,10 +13,12 @@ export default {
         "blue-light": "#e7f2fe",
         "green-light": "#cfd8dc",
         "green-dark": "#32677b",
+        "red-main": "#AE0000",
         // "green-dark": "#224653",
       },
       fontFamily: {
         "main-font": ['"Roboto"', "sans-serif"],
+        "jp-font": ['"H Hachimaki"', "sans-serif"],
       },
       boxShadow: {
         "box-shadow": "0 3px 5px #000000c0",

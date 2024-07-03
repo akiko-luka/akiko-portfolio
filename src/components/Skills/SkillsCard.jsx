@@ -1,9 +1,8 @@
 const SkillsCard = ({ icon, altTitle, iconName }) => {
   return (
     <>
-      <article className="mb-4 mr-2 w-[100px]">
+      <article className="mb-4 w-[100px]">
         <div className="flex flex-col items-center justify-center">
-          {/* img -> bg-white-main? */}
           <img
             src={icon}
             alt={altTitle}

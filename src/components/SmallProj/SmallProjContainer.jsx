@@ -21,8 +21,10 @@ const SmallProj = () => {
     <section
       className={`flex flex-col flex-wrap items-center border-b-[3px] p-8 pb-12 ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "border-gray-main"}`}
     >
-      <h2 className="mb-16 mt-4 text-2xl font-[700]">Small Projects</h2>
-      <div className="w-full mb-16 flex h-full flex-wrap justify-center gap-12">
+      <h2 className="font-jp-font mb-16 mt-4 text-3xl font-[700]">
+        Small Projects
+      </h2>
+      <div className="mb-16 flex h-full w-full flex-wrap justify-center gap-12">
         <SmallProjCard
           spUrl={"https://the-projects-js.netlify.app/03-passgen/"}
           spImage={passGen}

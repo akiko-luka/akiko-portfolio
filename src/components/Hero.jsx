@@ -2,29 +2,36 @@ import { useContext } from "react";
 import { DarkModeContext } from "../contexts/DarkModeContext.jsx";
 
 // image
-import avatar from "../assets/avatar.png";
-import bg from "../assets/jp-drawing.webp"
+import bg from "../assets/jp-drawing.webp";
 
 const Hero = () => {
   const { darkMode } = useContext(DarkModeContext);
   return (
     <>
       <section
-        className={`flex h-[60vh] items-center justify-center md:gap-16 border-b-[3px] ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "border-gray-main"}`}
+        className={`font-jp-font relative flex h-[60vh] items-center justify-center border-b-[3px] md:gap-16 ${darkMode ? "border-gray-dark bg-black-main" : "border-gray-main"}`}
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
       >
-        <div className="h-auto w-40 md:w-[250px]">
-          <img
-            src={avatar}
-            alt="avatar"
-            className="mx-4 h-full w-full md:mr-8"
-          />
-        </div>
-        <div>
-          <h1 className="mb-4 p-[5px] text-4xl font-[900] md:text-6xl">
+        <div
+          className="absolute inset-0 bg-white-main opacity-60"
+          aria-hidden="true"
+        ></div>
+        <div className="relative text-black-main"
+          style={{
+            textShadow: "3px 3px 6px rgba(0, 0, 0, 0.75)",
+          }}
+        >
+          <h1 className="mb-4 p-[5px] text-center text-4xl font-[900] md:text-8xl">
             Akiko Luka
           </h1>
-          <h3 className="ml-2 text-2xl">Full-Stack Web Developer</h3>
-          {/* animation and responsiveness*/}
+          <h3 className="ml-2 text-center text-2xl font-[900] md:text-3xl">
+            Junior Full-Stack Web Developer
+          </h3>
         </div>
       </section>
     </>

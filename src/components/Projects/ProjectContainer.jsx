@@ -23,7 +23,9 @@ const ProjectContainer = () => {
         id="projects"
         className={`scroll flex flex-col items-center justify-center border-b-[3px] p-8 pb-20 ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "bg-green-light"}`}
       >
-        <h2 className="mb-16 mt-4 text-[2rem] font-[700]">Projects</h2>
+        <h2 className="font-jp-font mb-16 mt-4 text-4xl font-[900]">
+          Projects
+        </h2>
         <div className="m-auto flex h-full flex-wrap justify-center gap-4">
           <ProjectCard
             image={akpicaBlog}
