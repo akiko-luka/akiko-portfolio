@@ -6,6 +6,10 @@ import StarterKitCard from "./StarterKitCard.jsx";
 // images
 import basic from "../../assets/starterkit/basic-server.webp";
 import mern from "../../assets/starterkit/mern-starter.webp";
+import rtsk from "../../assets/starterkit/rtsk.webp";
+
+// icon
+import { BsGithub } from "react-icons/bs";
 
 const StarterKitContainer = () => {
   const { darkMode } = useContext(DarkModeContext);
@@ -36,10 +40,20 @@ const StarterKitContainer = () => {
           altTitle={"mern-starter"}
         />
         <StarterKitCard
-          starterLink={""}
-          starterImg={""}
+          starterLink={"https://github.com/akiko-luka/rtsk"}
+          starterImg={rtsk}
           altTitle={"react-tailwind"}
         />
+      </div>
+
+      <div>
+        <a
+          href="https://github.com/akiko-luka"
+          target="_blank"
+          className={`m-2 flex w-56 items-center justify-center gap-[10px] border-[3px] border-solid p-2 text-base font-[500] transition-all duration-200 ease-in-out hover:bg-green-light hover:text-blue-main hover:shadow-none ${darkMode ? "border-gray-main bg-gray-dark shadow-box-shadow-dark" : "border-black-main bg-gray-main shadow-box-shadow"}`}
+        >
+          See more on my Github <BsGithub />
+        </a>
       </div>
     </section>
   );

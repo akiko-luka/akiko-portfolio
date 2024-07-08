@@ -21,7 +21,7 @@ const SmallProj = () => {
     <section
       className={`flex flex-col flex-wrap items-center border-b-[3px] p-8 pb-12 ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "border-gray-main"}`}
     >
-      <h2 className="font-jp-font mb-16 mt-4 text-3xl font-[700]">
+      <h2 className="mb-16 mt-4 font-jp-font text-3xl font-[700]">
         Small Projects
       </h2>
       <div className="mb-16 flex h-full w-full flex-wrap justify-center gap-12">
@@ -61,16 +61,6 @@ const SmallProj = () => {
           altTitle={"stopwatch"}
           spTitle={"stopwatch"}
         />
-      </div>
-
-      <div className="">
-        <a
-          href="https://github.com/akiko-luka"
-          target="_blank"
-          className={`m-2 flex w-56 items-center justify-center gap-[10px] border-[3px] border-solid p-2 text-base font-[500] transition-all duration-200 ease-in-out hover:bg-green-light hover:text-blue-main hover:shadow-none ${darkMode ? "border-gray-main bg-gray-dark shadow-box-shadow-dark" : "border-black-main bg-gray-main shadow-box-shadow"}`}
-        >
-          See more on my Github <BsGithub />
-        </a>
       </div>
     </section>
   );

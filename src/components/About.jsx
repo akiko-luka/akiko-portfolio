@@ -28,18 +28,23 @@ const About = () => {
             photography – which are common among many Japanese individuals.
           </p>
           <p className={pStyle}>
-            I take pride in being a hardworking person with a keen eye for
-            detail, traits likely influenced by my cultural background.
-          </p>
-          <p className={pStyle}>
             In 2012, I earned a Bachelor's degree in{" "}
             <strong>Computer Science</strong>, but life took me in a different
             direction, leading me to gain experience in{" "}
-            <strong>Customer Service</strong> through various jobs. Now, with a
-            fresh start in Germany, I recently completed a{" "}
-            <strong>Full-Stack Web Development</strong> course at DCI Digital
-            Career Institute and . I am eager to join an amazing team where I
-            can grow, learn, and create digital magic.
+            <strong>Customer Service</strong> through various roles. This
+            experience has honed my ability to provide innovative, customized
+            solutions for customers and taught me the importance of prioritizing
+            customer interests, a value deeply cherished in Japan.
+          </p>
+          <p className={pStyle}>
+            Now embarking on a new chapter in Germany, I have recently completed
+            an epic journey through the{" "}
+            <strong>Full-Stack Web Developement</strong> program at DCI Digital
+            Career Institute. I am eager to join a dynamic team where I can
+            leverage my unique combination of customer service expertise and
+            coding skills to create exceptional web solutions. My goal is to
+            thrive in an inspiring environment where I can grow, learn, and
+            contribute to creating digital magic.
           </p>
           <p className={pStyle}>
             I specialize in the MERN stack, utilizing React.js for dynamic
@@ -47,7 +52,7 @@ const About = () => {
             for flexible data storage solutions.
           </p>
         </div>
-        <div className=" w-48 md:w-64">
+        <div className="w-48 md:w-64">
           <img src={avatar} alt="avatar" className="" />
         </div>
       </div>
