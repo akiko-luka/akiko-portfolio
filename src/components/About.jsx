@@ -20,7 +20,7 @@ const About = () => {
             Hey there! I'm <strong>Akiko Luka</strong>.
           </p>
           <p className={pStyle}>
-            A Junior <strong>Full-Stack Web Developer</strong>
+            A <strong>Full-Stack Web Developer</strong>
           </p>
           <p className={pStyle}>
             Originally from <strong>Japan</strong> and now living in{" "}

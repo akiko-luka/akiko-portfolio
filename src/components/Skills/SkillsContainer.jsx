@@ -31,21 +31,41 @@ const SkillsContainer = () => {
       </h2>
       <article className="m-auto flex h-full flex-wrap justify-center">
         <div className="flex w-auto items-center justify-center md:w-11/12">
-          <SkillsCard icon={mongodb} altTitle={"mongodb"} iconName={"mongodb"} />
-          <SkillsCard icon={express} altTitle={"express.js"} iconName={"express.js"} />
+          <SkillsCard
+            icon={mongodb}
+            altTitle={"mongodb"}
+            iconName={"mongodb"}
+          />
+          <SkillsCard
+            icon={express}
+            altTitle={"express.js"}
+            iconName={"express.js"}
+          />
           <SkillsCard icon={react} altTitle={"react"} iconName={"react"} />
           <SkillsCard icon={node} altTitle={"node.js"} iconName={"node.js"} />
         </div>
 
-        <div className="flex w-full items-center flex-wrap justify-center md:w-11/12">
-          <SkillsCard icon={js} altTitle={"javaScript"} iconName={"javaScript"} />
-          <SkillsCard icon={tailwind} altTitle={"tailwind"} iconName={"tailwind"} />
+        <div className="flex w-full flex-wrap items-center justify-center md:w-11/12">
+          <SkillsCard
+            icon={js}
+            altTitle={"javaScript"}
+            iconName={"javaScript"}
+          />
+          <SkillsCard
+            icon={tailwind}
+            altTitle={"tailwind"}
+            iconName={"tailwind"}
+          />
           <SkillsCard icon={html} altTitle={"html"} iconName={"html"} />
           <SkillsCard icon={css} altTitle={"css"} iconName={"css"} />
           <SkillsCard icon={git} altTitle={"git"} iconName={"git"} />
           <SkillsCard icon={github} altTitle={"github"} iconName={"github"} />
           <SkillsCard icon={vscode} altTitle={"vscode"} iconName={"vscode"} />
-          <SkillsCard icon={bootstrap} altTitle={"bootstrap"} iconName={"bootstrap"} />
+          <SkillsCard
+            icon={bootstrap}
+            altTitle={"bootstrap"}
+            iconName={"bootstrap"}
+          />
           <SkillsCard icon={sass} altTitle={"sass"} iconName={"sass"} />
           {/* <SkillsCard icon={ts} altTitle={"typescript"} iconName={"typescript"} /> */}
         </div>

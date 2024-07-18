@@ -21,7 +21,7 @@ const Hero = () => {
           className="absolute inset-0 bg-white-main opacity-60"
           aria-hidden="true"
         ></div>
-        <div className="relative text-black-main"
+        <div className="relative text-black-main bg-white-main/70"
           style={{
             textShadow: "3px 3px 6px rgba(0, 0, 0, 0.75)",
           }}
@@ -30,7 +30,7 @@ const Hero = () => {
             Akiko Luka
           </h1>
           <h3 className="ml-2 text-center text-2xl font-[900] md:text-3xl">
-            Junior Full-Stack Web Developer
+            Full-Stack Web Developer
           </h3>
         </div>
       </section>
