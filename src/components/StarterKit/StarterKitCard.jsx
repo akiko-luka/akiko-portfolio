@@ -6,7 +6,7 @@ const StarterKitCard = ({ starterLink, starterImg, altTitle }) => {
           <img
             src={starterImg}
             alt={altTitle}
-            className="mb-5 h-full w-full border-[2px] border-black-main object-cover object-center shadow-box-shadow-dark transition-all duration-300 ease-out hover:shadow-none"
+            className="mb-5 h-full w-full object-cover object-center shadow-box-shadow-dark transition-all duration-300 ease-out hover:shadow-none"
           />
         </div>
       </a>

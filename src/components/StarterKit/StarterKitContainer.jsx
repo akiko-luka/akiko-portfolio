@@ -6,7 +6,7 @@ import StarterKitCard from "./StarterKitCard.jsx";
 // images
 import basic from "../../assets/starterkit/basic-server.webp";
 import mern from "../../assets/starterkit/mern-starter.webp";
-import rtsk from "../../assets/starterkit/rtsk.webp";
+import rtsk from "../../assets/starterkit/reactTailwind.webp";
 
 // icon
 import { BsGithub } from "react-icons/bs";

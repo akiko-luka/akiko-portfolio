@@ -31,10 +31,10 @@ const About = () => {
             In 2012, I earned a Bachelor's degree in{" "}
             <strong>Computer Science</strong>, but life took me in a different
             direction, leading me to gain experience in{" "}
-            <strong>Customer Service</strong> through various roles. This
-            experience has honed my ability to provide innovative, customized
-            solutions for customers and taught me the importance of prioritizing
-            customer interests, a value deeply cherished in Japan.
+            <strong>Customer Service</strong> through various customer-oriented
+            roles. This experience has honed my ability to provide innovative,
+            customized solutions for customers and taught me the importance of
+            prioritizing customer interests, a value deeply cherished in Japan.
           </p>
           <p className={pStyle}>
             Now embarking on a new chapter in Germany, I have recently completed
