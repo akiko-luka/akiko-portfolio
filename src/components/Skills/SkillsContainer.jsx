@@ -4,20 +4,20 @@ import { DarkModeContext } from "../../contexts/DarkModeContext.jsx";
 import SkillsCard from "./SkillsCard";
 
 // icons
-import bootstrap from "../../assets/icons/icon-bootstrap.png";
-import css from "../../assets/icons/icon-css.png";
-import express from "../../assets/icons/icon-express.png";
-import git from "../../assets/icons/icon-git.png";
-import github from "../../assets/icons/icon-github.png";
-import html from "../../assets/icons/icon-html.png";
-import js from "../../assets/icons/icon-js.png";
-import mongodb from "../../assets/icons/icon-mongodb.png";
-import node from "../../assets/icons/icon-node.png";
-import react from "../../assets/icons/icon-react.png";
-import sass from "../../assets/icons/icon-sass.png";
-import tailwind from "../../assets/icons/icon-tailwind.png";
+import bootstrap from "../../assets/icons/icon-bootstrap.webp";
+import css from "../../assets/icons/icon-css.webp";
+import express from "../../assets/icons/icon-express.webp";
+import git from "../../assets/icons/icon-git.webp";
+import github from "../../assets/icons/icon-github.webp";
+import html from "../../assets/icons/icon-html.webp";
+import js from "../../assets/icons/icon-js.webp";
+import mongodb from "../../assets/icons/icon-mongodb.webp";
+import node from "../../assets/icons/icon-node.webp";
+import react from "../../assets/icons/icon-react.webp";
+import sass from "../../assets/icons/icon-sass.webp";
+import tailwind from "../../assets/icons/icon-tailwind.webp";
 // import ts from "../../assets/icons/icon-ts.png";
-import vscode from "../../assets/icons/icon-vscode.png";
+import vscode from "../../assets/icons/icon-vscode.webp";
 
 const SkillsContainer = () => {
   const { darkMode } = useContext(DarkModeContext);
