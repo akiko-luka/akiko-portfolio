@@ -26,7 +26,7 @@ const Home = () => {
         <footer
           className={`p-4 text-center ${darkMode ? "text-white" : "bg-green-light text-black"}`}
         >
-          &copy; {new Date().getFullYear()} | Akiko Luka
+          &copy; {new Date().getFullYear()} | Akiko Luka | All Rights Reserved
         </footer>
       </div>
     </>
