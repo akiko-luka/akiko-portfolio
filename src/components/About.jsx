@@ -23,9 +23,8 @@ const About = () => {
             A <strong>Full-Stack Web Developer</strong>
           </p>
           <p className={pStyle}>
-            Originally from <strong>Japan</strong> and now living in{" "}
-            <strong>Berlin</strong>, I'm all about ramen, sushi, anime, and
-            photography – which are common among many Japanese individuals.
+            I'm all about ramen, sushi, anime, and photography – which are
+            common among many Japanese individuals.
           </p>
           <p className={pStyle}>
             In 2012, I earned a Bachelor's degree in{" "}
@@ -37,19 +36,19 @@ const About = () => {
             prioritizing customer interests, a value deeply cherished in Japan.
           </p>
           <p className={pStyle}>
-            Now embarking on a new chapter in Germany, I have recently completed
-            an epic journey through the{" "}
-            <strong>Full-Stack Web Developement</strong> program at DCI Digital
-            Career Institute. I am eager to join a dynamic team where I can
-            leverage my unique combination of customer service expertise and
-            coding skills to create exceptional web solutions. My goal is to
-            thrive in an inspiring environment where I can grow, learn, and
-            contribute to creating digital magic.
+            While living in Germany, I embarked on an exciting new chapter by
+            completing the <strong>Full-Stack Web Development</strong> program.
+            This experience allowed me to combine my technical expertise with a
+            customer-focused mindset, enabling me to create meaningful and
+            impactful digital solutions. I am eager to join a collaborative team
+            where I can grow, learn, and contribute to creating digital magic.
           </p>
           <p className={pStyle}>
-            I specialize in the MERN stack, utilizing React.js for dynamic
-            frontends, Node.js and Express.js for robust backends, and MongoDB
-            for flexible data storage solutions.
+            I specialize in the <strong>MERN stack</strong>, crafting dynamic
+            frontends with React.js, building robust backends using Node.js and
+            Express.js, and implementing flexible data storage solutions with
+            MongoDB. With these skills, I am ready to help build innovative web
+            applications that make a difference.
           </p>
         </div>
         <div className="w-48 md:w-64">
