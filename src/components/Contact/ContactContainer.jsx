@@ -16,7 +16,7 @@ const ContactContainer = () => {
     <>
       <section
         id="contact"
-        className={`scroll flex flex-col flex-wrap items-center border-b-[3px] p-8 ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "border-gray-main bg-green-light"}`}
+        className={`scroll flex flex-col flex-wrap items-center border-b-[3px] p-8 ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "border-gray-main"}`}
       >
         <h2 className="font-jp-font mb-4 mt-4 text-4xl font-[700]">
           Contact me

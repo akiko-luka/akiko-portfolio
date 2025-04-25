@@ -11,7 +11,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className={`scroll flex flex-col items-center border-b-[3px] p-8 pb-20 ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "border-gray-main"}`}
+      className={`scroll flex flex-col items-center border-b-[3px] p-8 pb-20 ${darkMode ? "border-gray-dark bg-black-main text-white-main" : "border-gray-main bg-green-light"}`}
     >
       <h2 className="mb-16 mt-4 font-jp-font text-4xl font-[700]">About</h2>
       <div className="flex flex-col items-center gap-4 md:flex-row">
