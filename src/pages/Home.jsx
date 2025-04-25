@@ -20,8 +20,8 @@ const Home = () => {
         <Hero />
         <ProjectContainer />
         <SkillsContainer />
-        <ContactContainer />
         <About />
+        <ContactContainer />
 
         <footer
           className={`p-4 text-center ${darkMode ? "text-white" : "bg-green-light text-black"}`}
